@@ -545,11 +545,12 @@ header nav ul li a:hover {
 .search input {
   -webkit-appearance: textfield;
   font-size: 0.87em;
+  height: 24px;
   border: 1px solid #fff;
   color: #fff;
   background: transparent;
   width: 80%;
-  padding: 0.3em 0 0.3em 0.6em;
+  padding: 0.1em 0 0.1em 0.6em;
 }
 @media only screen and (min-width: 1024px) {
   .search input {
