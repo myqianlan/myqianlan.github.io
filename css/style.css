@@ -1975,6 +1975,18 @@ footer {
   -moz-osx-font-smoothing: grayscale;
   content: "\f111";
 }
+.icon-qq:before {
+  font-family: "fontdiao";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f125";
+}
+.icon-zhifu:before {
+  font-family: "fontdiao";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f142";
+}
 .copyright {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

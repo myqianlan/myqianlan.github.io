@@ -1,11 +1,11 @@
 
-  <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="baidu-site-verification" content="W0L8pWynCf" />
   
-    <title>Archives | myqianlan</title>
+    <title>Tag: undefined | myqianlan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="myqianlan">
@@ -92,91 +92,23 @@
 	</div>
       </header>
       <div id="container">
-        
-
+          
 <div class="archive-title" >
-  <h2 class="archive-icon">归档</h2>
-  
-  <div class="archiveslist archive-float clearfix">
-   <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">2014 年 11 月</a><span class="archive-list-count">2</span></li></ul>
- </div>
-  
+<h2 class="tag-icon">标签</h2>
+
+<a data-src="/tags/学习/" href="#学习" title="学习">学习<sup>1</sup></a>
+
+<a data-src="/tags/生活/" href="#生活" title="生活">生活<sup>1</sup></a>
+
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2014/11/10/first-post/" title="开博之语" itemprop="url">
-  
-
-    <time datetime="2014-11-10T08:22:07.000Z" itemprop="datePublished">11月 10 2014</time>
-
-
-    <h1 itemprop="name">开博之语</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2014/11/10/hello-world/" title="Hello World" itemprop="url">
-  
-
-    <time datetime="2014-11-10T05:04:03.000Z" itemprop="datePublished">11月 10 2014</time>
-
-
-    <h1 itemprop="name">Hello World</h1>
-
-  </a>
-</section>
-
-
-  </div>
+<div id="main" class="archive-part">
+<div class="all-list-box"></div>
 </div>
+
+
+
 
       </div>
-      <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<section class="info">
-		<p> with an unchangable heart <br/>
-			we can expect that a good beginning makes a wonderful ending</p>
-	</section>
-	 
-	<div class="social-font" class="clearfix">
-		
-		<a href="tencent://message/?uin=237733789## e.g&amp;Site=im.qq.com&amp;Menu=yes" target="_blank" class="icon-qq" title="QQ"></a>
-		
-		
-		<a href="http://www.zhihu.com/people/tan-lin-quan## e.g. tan-lin-quan for http://www.zhihu.com/people/tan-lin-quan" target="_blank" class="icon-zhifu" title="知乎"></a>
-		
-		
-		
-		<a href="https://github.com/myqianlan## e.g. wuchong for https://github.com/wuchong" target="_blank" class="icon-github" title="github"></a>
-		
-		
-		
-		
-		
-		
-		
-		
-		<a href="mailto:linquantan@gmail.com## e.g. wuchong1014@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
-		
-		<a href="http://myqianlan.com/about" target="_blank" title="myqianlan">myqianlan</a>
-		
-		</p>
-</div>
-</footer>
       <script src="/js/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -230,6 +162,24 @@ $(document).ready(function(){
 
 
 
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var list    = $('.archive-title a'),
+      box     = $('.all-list-box'),
+      first   = $('.archive-title a:first-of-type');
+      box.load(first.attr('data-src').toString()+' #archive-page');
+      first.addClass('current');
+  list.each(function(){
+    $(this).click(function(){
+      var listSrc=$(this).attr('data-src').toString()+' #archive-page';
+      box.load(listSrc);
+      list.removeClass('current');
+      $(this).addClass('current');
+     });  
+    });
+  }); 
+</script>
 
 
 
