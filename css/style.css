@@ -375,7 +375,7 @@ body >header {
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   background: #2ca6cb;
-  background-image: url("/img/banner.jpg");
+  background-image: url("http://myqianlan.qiniudn.com/static/banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
