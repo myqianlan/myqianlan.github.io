@@ -63,7 +63,7 @@
 	<div class="navbar">
 		<a class="navbutton navmobile" href="#" title="菜单"></a>
 	</div>
-	<nav class="animated">
+	<nav>
 		<ul>
 			<ul>
 				
@@ -199,8 +199,6 @@
 	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/生活/" title="生活">生活<sup>1</sup></a></li>
-		
 			<li><a href="/tags/教程/" title="教程">教程<sup>1</sup></a></li>
 		
 			<li><a href="/tags/html5/" title="html5">html5<sup>1</sup></a></li>
@@ -210,6 +208,8 @@
 			<li><a href="/tags/chrome/" title="chrome">chrome<sup>1</sup></a></li>
 		
 			<li><a href="/tags/插件/" title="插件">插件<sup>1</sup></a></li>
+		
+			<li><a href="/tags/生活/" title="生活">生活<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -288,7 +288,7 @@
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
+    $('header nav').slideToggle();
     return false;
   });
   var myWidth = 0;

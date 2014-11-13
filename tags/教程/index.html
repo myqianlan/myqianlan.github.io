@@ -59,7 +59,7 @@
 	<div class="navbar">
 		<a class="navbutton navmobile" href="#" title="菜单"></a>
 	</div>
-	<nav class="animated">
+	<nav>
 		<ul>
 			<ul>
 				
@@ -164,7 +164,7 @@
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
+    $('header nav').slideToggle();
     return false;
   });
   var myWidth = 0;
