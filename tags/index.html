@@ -111,11 +111,12 @@
 
 
       </div>
-      <script src="/js/jquery-2.0.3.min.js"></script>
+      <script src="http://myqianlan.qiniudn.com/static/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
     $('header nav').toggleClass('shownav');
+    return false;
   });
   var myWidth = 0;
   function getSize(){
@@ -145,13 +146,15 @@ $(document).ready(function(){
     a.addClass('fadeOut').css('display', 'none');
     o.css('display', 'block').addClass('fadeIn');
     m.addClass('moveMain');
+    return false;
   });
   o.click(function(){
     o.css('display', 'none').removeClass('fadeIn');
     m.removeClass('moveMain');
     setTimeout(function(){
         a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');    
-    },500)
+    },500);
+    return false;
       
   });
   $(window).scroll(function(){
