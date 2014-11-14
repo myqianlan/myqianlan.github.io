@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-11-13T09:32:34.050Z</updated>
+  <updated>2014-11-14T05:30:36.354Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -19,9 +19,8 @@
     <link href="http://myqianlan.com/2014/11/13/frontend-usefull-chrome-plugins/"/>
     <id>http://myqianlan.com/2014/11/13/frontend-usefull-chrome-plugins/</id>
     <published>2014-11-13T05:22:52.000Z</published>
-    <updated>2014-11-13T06:14:08.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="前言">前言</h2>
-<p>这篇博客推荐的都是谷歌chrome浏览器插件，理论上，与之相同内核的浏览器都能使用。由于是谷歌插件，所以在天朝的网络，你懂的！</p>
+    <updated>2014-11-14T05:04:25.000Z</updated>
+    <content type="html"><![CDATA[<p>这篇博客推荐的都是谷歌chrome浏览器插件，理论上，与之相同内核的浏览器都能使用。由于是谷歌插件，所以在天朝的网络，你懂的！<a id="more"></a></p>
 <h2 id="红杏"><a href="http://honx.in/i/U84lHoIaA2LMm5Ow" target="_blank" rel="external">红杏</a></h2>
 <p>专为 学者 、程序员、外贸工作者 打造的上网加速器。我们相信，上网本该如此简单！扯淡了，我相信大家都懂，因为在天朝。不多说，我相信收费的才能得到更好地服务。</p>
 <h2 id="有道智能翻译"><a href="https://chrome.google.com/webstore/detail/%E6%9C%89%E9%81%93%E6%99%BA%E8%83%BD%E7%BF%BB%E8%AF%91/fcihnniakiicgonogcieldhhjbgpnjpj" target="_blank" rel="external">有道智能翻译</a></h2>
@@ -44,9 +43,8 @@
 <p>大家有什么好玩的chrome插件也分享分享啊！</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="前言">前言</h2>
-<p>这篇博客推荐的都是谷歌chrome浏览器插件，理论上，与之相同内核的浏览器都能使用。由于是谷歌插件，所以在天朝的网络，你懂的！</p>
-<h2 id="红杏"><a href="http://honx.in/i/U84lHoIaA2L]]>
+    <![CDATA[<p>这篇博客推荐的都是谷歌chrome浏览器插件，理论上，与之相同内核的浏览器都能使用。由于是谷歌插件，所以在天朝的网络，你懂的！]]>
+    
     </summary>
     
       <category term="插件" scheme="http://myqianlan.com/tags/%E6%8F%92%E4%BB%B6/"/>
@@ -62,14 +60,15 @@
     <link href="http://myqianlan.com/2014/11/11/right-time-to-use-html5-tags/"/>
     <id>http://myqianlan.com/2014/11/11/right-time-to-use-html5-tags/</id>
     <published>2014-11-11T06:49:08.000Z</published>
-    <updated>2014-11-12T09:14:09.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="html5真的来了">html5真的来了</h2>
-<p>html5，这个词语，不管是业内还是业外，都已经耳熟能详了。因为已经火了这么长的的时间了。但是，真正开始使用的又有多少人呢？只能用呵呵来形容了！<br>2014年10月28日，历经八年，W3C（万维网联盟）终于完成了HTML5标准的制定工作，html5的规范状态终于变成了RECOMMENDATION。<a href="http://www.w3.org/blog/news/archives/4167" target="_blank" rel="external">HTML5 IS A W3C RECOMMENDATION英文原文</a>。</p>
+    <updated>2014-11-14T05:04:32.000Z</updated>
+    <content type="html"><![CDATA[<p>html5，这个词语，不管是业内还是业外，都已经耳熟能详了。因为已经火了这么长的的时间了。但是，真正开始使用的又有多少人呢？只能用呵呵来形容了！<a id="more"></a></p>
+<h2 id="html5真的来了">html5真的来了</h2>
+<p>2014年10月28日，历经八年，W3C（万维网联盟）终于完成了HTML5标准的制定工作，html5的规范状态终于变成了RECOMMENDATION。<a href="http://www.w3.org/blog/news/archives/4167" target="_blank" rel="external">HTML5 IS A W3C RECOMMENDATION英文原文</a>。</p>
 <h2 id="接下来做什么">接下来做什么</h2>
 <p>作为一个web开发者，特别是前端开发从业者，需要真正从自身开始，逐渐习惯使用html5标签了。</p>
 <h2 id="html5布局基本demo">html5布局基本demo</h2>
 <p>这里给出一个html5布局的基本demo，欢迎拍砖！<br>同样，你也可以在这里直接查看源码，不过repo里面包含一些基于gulp的工作流。<a href="https://github.com/myqianlan/f2e-workflow" target="_blank" rel="external">点击查看仓库</a></p>
-<p>首先，给出图示“<br><img src="http://myqianlan.qiniudn.com/blog/2014/11/11html5基本布局.png" alt="html5基本布局"></p>
+<p>首先，给出图示“<br><img src="http://myqianlan.qiniudn.com/blog/2014/11/11/html5基本布局.png" alt="html5基本布局"></p>
 <p>然后，给出相应的html代码</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"zh-CN"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>网站标题，控制在25个字、50个字节以内<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"keywords"</span> <span class="attribute">content</span>=<span class="value">"关键词,5个左右,单个8汉字以内"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"description"</span> <span class="attribute">content</span>=<span class="value">"网站描述，字数尽量空制在80个汉字，160个字符以内！"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=edge"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"viewport"</span> <span class="attribute">content</span>=<span class="value">"width=device-width, initial-scale=1"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"http://cdn.bootcss.com/normalize/3.0.1/normalize.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></div><div class="line">    	<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    	<span class="tag">body</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f5f5f5</span></span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">header</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#006dcc</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">35px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">nav</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>; <span class="rule">}</span></div><div class="line">  <span class="tag">nav</span> <span class="tag">li</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">list-style</span>:<span class="value"> none</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">background-color</span>:<span class="value"> forestgreen</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">36px</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">36px</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">20%</span></span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">section</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">300px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#006dcc</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">margin-right</span>:<span class="value"> <span class="number">100px</span></span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">aside</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">226px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">300px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> forestgreen</span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">footer</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">80px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> gray</span></span>; <span class="rule">}</span></div><div class="line">    <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--[if lt IE 9]&gt;</span></div><div class="line">    &lt;style&gt;.browsehappy {margin: .2em;background: #ccc;color: #000;padding: .5em;}&lt;/style&gt;</div><div class="line">    &lt;p class="browsehappy"&gt;</div><div class="line">        您使用的浏览器 &lt;strong&gt;版本过低&lt;/strong&gt;</div><div class="line">        ，请</div><div class="line">        &lt;a href="http://browsehappy.com/"&gt;升级您的浏览器&lt;/a&gt;</div><div class="line">        以获得更好的体验。</div><div class="line">    &lt;/p&gt;</div><div class="line">    &lt;script src="http://cdn.bootcss.com/html5shiv/r29/html5.js"&gt;&lt;/script&gt;</div><div class="line">    &lt;![endif]--&gt;</div><div class="line">    <span class="comment">&lt;!-- CONTENT --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">header</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>hello world<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">header</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="title">nav</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>home<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>contact<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>about<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">section</span>&gt;</span>section</div><div class="line">    <span class="tag">&lt;<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">article</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">article</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">section</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">aside</span>&gt;</span>aside<span class="tag">&lt;/<span class="title">aside</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">footer</span>&gt;</span>footer<span class="tag">&lt;/<span class="title">footer</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></td></tr></table></figure>
 
@@ -77,8 +76,8 @@
 <p>少年，尽情的迎接这个最坏的年代，这个最好的年代！</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="html5真的来了">html5真的来了</h2>
-<p>html5，这个词语，不管是业内还是业外，都已经耳熟能详了。因为已经火了这么长的的时间了。但是，真正开始使用的又有多少人呢？只能用呵呵来形容了！<br>2014年10月28日，历经八年，W3C（万维网联盟）]]>
+    <![CDATA[<p>html5，这个词语，不管是业内还是业外，都已经耳熟能详了。因为已经火了这么长的的时间了。但是，真正开始使用的又有多少人呢？只能用呵呵来形容了！]]>
+    
     </summary>
     
       <category term="html5" scheme="http://myqianlan.com/tags/html5/"/>
@@ -92,10 +91,10 @@
     <link href="http://myqianlan.com/2014/11/11/sometimes-i-thinks/"/>
     <id>http://myqianlan.com/2014/11/11/sometimes-i-thinks/</id>
     <published>2014-11-11T05:50:17.000Z</published>
-    <updated>2014-11-11T05:54:12.000Z</updated>
+    <updated>2014-11-14T05:04:17.000Z</updated>
     <content type="html"><![CDATA[<p>独自漫步于江南</p>
 <p>曾只为拾起</p>
-<p>前世的记忆与企盼</p>
+<p>前世的记忆与企盼<br><a id="more"></a></p>
 <p>小桥流水</p>
 <p>青瓦白墙</p>
 <p>沿岸的足迹</p>
@@ -115,49 +114,11 @@
     <summary type="html">
     <![CDATA[<p>独自漫步于江南</p>
 <p>曾只为拾起</p>
-<p>前世的记忆与企盼</p>
-<p>小桥流水</p>
-<p>青瓦白墙</p>
-<p>沿岸的足迹</p>
-<p>却不曾</p>
-<p>淡了，碎了</p>
-<p>而故乡的一切</p>
-<p>已化作了奢侈的回忆</p>
-<p>从]]>
+<p>前世的记忆与企盼<br>]]>
+    
     </summary>
     
       <category term="生活" scheme="http://myqianlan.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://myqianlan.com/2014/11/11/hello-world/"/>
-    <id>http://myqianlan.com/2014/11/11/hello-world/</id>
-    <published>2014-11-11T03:11:11.000Z</published>
-    <updated>2014-11-11T05:54:56.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
     
   </entry>
   
