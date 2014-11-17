@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-11-14T09:23:24.567Z</updated>
+  <updated>2014-11-17T07:58:20.770Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -13,6 +13,241 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Git基本命令和GitFlow工作流]]></title>
+    <link href="http://myqianlan.com/2014/11/15/git-tips-and-gitflow/"/>
+    <id>http://myqianlan.com/2014/11/15/git-tips-and-gitflow/</id>
+    <published>2014-11-15T06:08:44.000Z</published>
+    <updated>2014-11-17T07:53:07.000Z</updated>
+    <content type="html"><![CDATA[<p>本篇博客讲解了git的一些基本的团队协作命令，和GitFlow工作流指南<a id="more"></a></p>
+<h2 id="git_团队协作的一些命令">git 团队协作的一些命令</h2>
+<ul>
+<li><strong>1.开分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git branch 新分支名</div><div class="line">例如，在master分支下，新开一个开发分支：</div><div class="line">git branch dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>2.切换到新分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkout 分支名</div><div class="line">例如，在master分支下，切换到新开的dev：</div><div class="line">git checkout dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>3.开分支和切换分支合并到一个命令</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkout -b 新分支名</div><div class="line">例如，新开一个开发分支，并立即切换到该分支：</div><div class="line">git checkout -b dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>4.切换回原分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout 原分支名</div><div class="line">例如，切换回master</div><div class="line">git checkout master</div><div class="line">注意：当前分支有修改，还未commit的时候，会切换失败，应当先commit，但可以不用push</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>5.合并分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git merge 需要合并的分支名</div><div class="line">例如，刚刚已经切换回master，现在需要合并dev的内容：</div><div class="line">git merge dev</div><div class="line">建议在GitLab(或者其他git系统)上面创建merge request的形式来进行分支的合并和代码审核。</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>6.查看本地分支列表</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch <span class="operator">-a</span></div><div class="line">前面带remotes/origin 的，是远程分支</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>7.查看远程分支列表</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -r</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>8.向远程提交本地新开的分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push origin 新分支名</div><div class="line">例如，刚刚在master下新开的dev分支：</div><div class="line">git push origin dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>9.删除远程分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push origin :远程分支名</div><div class="line">例如，删除刚刚提交到远程的dev分支：</div><div class="line">git push origin :dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>10.删除本地分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git branch 分支名称 <span class="operator">-d</span></div><div class="line">例如，在master分支下，删除新开的dev分支：</div><div class="line">git branch dev <span class="operator">-d</span></div><div class="line">注意：如果dev的更改，push到远程，在GitLab(或者其他git系统)上面进行了merge操作，但是本地master没有pull最新的代码，会删除不成功，可以先git pull origin master，或者强制删除</div><div class="line">git branch dev -D</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>11.更新分支列表信息</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch -p</div></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>12.TortoiseGit(乌龟git)</strong></p>
+<pre><code>  不可否认，在windows下，这个是个不错的工具。不管你是命令行新手还是重度使用者，我觉得都可以尝试一下。
+</code></pre></li>
+</ul>
+<h2 id="Git工作流指南：Gitflow工作流">Git工作流指南：Gitflow工作流</h2>
+<p>在你开始阅读之前，请记住：流程应被视作为指导方针，而非“铁律”。我们只是想告诉你可能的做法。因此，如果有必要的话，你可以组合使用不同的流程</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflows-gitflow.png" alt="图一"></p>
+<p>Gitflow工作流定义了一个围绕项目发布的严格分支模型。虽然比功能分支工作流复杂几分，但提供了用于一个健壮的用于管理大型项目的框架。</p>
+<p>Gitflow工作流没有用超出功能分支工作流的概念和命令，而是为不同的分支分配一个很明确的角色，并定义分支之间如何和什么时候进行交互。除了使用功能分支，在做准备、维护和记录发布也使用各自的分支。当然你可以用上功能分支工作流所有的好处：Pull Requests、隔离实验性开发和更高效的协作。</p>
+<h3 id="工作方式">工作方式</h3>
+<p>Gitflow工作流仍然用中央仓库作为所有开发者的交互中心。和其它的工作流一样，开发者在本地工作并push分支到要中央仓库中。</p>
+<h3 id="历史分支">历史分支</h3>
+<p>相对使用仅有的一个master分支，Gitflow工作流使用2个分支来记录项目的历史。master分支存储了正式发布的历史，而develop分支作为功能的集成分支。这样也方便master分支上的所有提交分配一个版本号。</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-1historical.png" alt="图二"></p>
+<p>剩下要说明的问题围绕着这2个分支的区别展开。</p>
+<h3 id="功能分支">功能分支</h3>
+<p>每个新功能位于一个自己的分支，这样可以push到中央仓库以备份和协作。但功能分支不是从master分支上拉出新分支，而是使用develop分支作为父分支。当新功能完成时，合并回develop分支。新功能提交应该从不直接与master分支交互。</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-2feature.png" alt="图三"></p>
+<blockquote>
+<p>注意，从各种含义和目的上来看，功能分支加上develop分支就是功能分支工作流的用法。但Gitflow工作流没有在这里止步。</p>
+</blockquote>
+<h3 id="发布分支">发布分支</h3>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-3release.png" alt="图四"></p>
+<p>一旦develop分支上有了做一次发布（或者说快到了既定的发布日）的足够功能，就从develop分支上fork一个发布分支。新建的分支用于开始发布循环，所以从这个时间点开始之后新的功能不能再加到这个分支上 —— 这个分支只应该做Bug修复、文档生成和其它面向发布任务。一旦对外发布的工作都完成了，发布分支合并到master分支并分配一个版本号打好Tag。另外，这些从新建发布分支以来的做的修改要合并回develop分支。</p>
+<p>使用一个用于发布准备的专门分支，使得一个团队可以在完善当前的发布版本的同时，另一个团队可以继续开发下个版本的功能。<br>这也打造定义良好的开发阶段（比如，可以很轻松地说，『这周我们要做准备发布版本4.0』，并且在仓库的目录结构中可以实际看到）。</p>
+<h3 id="常用的分支约定：">常用的分支约定：</h3>
+<blockquote>
+<p>用于新建发布分支的分支: develop</p>
+<p>用于合并的分支: master</p>
+<p>分支命名: release-<em> 或 release/</em></p>
+</blockquote>
+<h3 id="维护分支">维护分支</h3>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-4maintenance.png" alt="图五"></p>
+<p>维护分支或说是热修复（hotfix）分支用于生成快速给产品发布版本（production releases）打补丁，这是唯一可以直接从master分支fork出来的分支。修复完成，修改应该马上合并回master分支和develop分支（当前的发布分支），master分支应该用新的版本号打好Tag。</p>
+<p>为Bug修复使用专门分支，让团队可以处理掉问题而不用打断其它工作或是等待下一个发布循环。你可以把维护分支想成是一个直接在master分支上处理的临时发布。</p>
+<h3 id="示例">示例</h3>
+<p>下面的示例演示本工作流如何用于管理单个发布循环。假设你已经创建了一个中央仓库。</p>
+<h4 id="创建开发分支"><em>创建开发分支</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-5createdev.png" alt="图六"></p>
+<p>第一步为master分支配套一个develop分支。简单来做可以本地创建一个空的develop分支，push到服务器上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch develop</div><div class="line">git push -u origin develop</div></pre></td></tr></table></figure>
+
+<p>以后这个分支将会包含了项目的全部历史，而master分支将只包含了部分历史。其它开发者这时应该克隆中央仓库，建好develop分支的跟踪分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git clone ssh://user@host/path/to/repo.git</div><div class="line">git checkout -b develop origin/develop</div></pre></td></tr></table></figure>
+
+<p>现在每个开发都有了这些历史分支的本地拷贝。</p>
+<h4 id="工程师A和工程师B开始开发新功能"><em>工程师A和工程师B开始开发新功能</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-6maryjohnbeginnew.png" alt="图七"></p>
+<p>这个示例中，工程师A和工程师B开始各自的功能开发。他们需要为各自的功能创建相应的分支。新分支不是基于master分支，而是应该基于develop分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b some-feature develop</div></pre></td></tr></table></figure>
+
+<p>他们用老套路添加提交到各自功能分支上：编辑、暂存、提交：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git status</div><div class="line">git add</div><div class="line">git commit</div></pre></td></tr></table></figure>
+
+<h4 id="工程师A完成功能开发"><em>工程师A完成功能开发</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-7maryfinishes.png" alt="图八"></p>
+<p>添加了提交后，工程师A觉得她的功能OK了。如果团队使用Pull Requests，这时候可以发起一个用于合并到develop分支。否则她可以直接合并到她本地的develop分支后push到中央仓库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git pull origin develop</div><div class="line">git checkout develop</div><div class="line">git merge some-feature</div><div class="line">git push</div><div class="line">git branch <span class="operator">-d</span> some-feature</div></pre></td></tr></table></figure>
+
+<p>第一条命令在合并功能前确保develop分支是最新的。注意，功能决不应该直接合并到master分支。冲突解决方法和集中式工作流一样。</p>
+<h4 id="工程师A开始准备发布"><em>工程师A开始准备发布</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-8maryprepsrelease.png" alt="图九"></p>
+<p>这个时候工程师B正在实现他的功能，工程师A开始准备她的第一个项目正式发布。像功能开发一样，她用一个新的分支来做发布准备。这一步也确定了发布的版本号：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b release-<span class="number">0.1</span> develop</div></pre></td></tr></table></figure>
+
+<p>这个分支是清理发布、执行所有测试、更新文档和其它为下个发布做准备操作的地方，像是一个专门用于改善发布的功能分支。</p>
+<p>只要工程师A创建这个分支并push到中央仓库，这个发布就是功能冻结的。任何不在develop分支中的新功能都推到下个发布循环中。</p>
+<h4 id="工程师A完成发布"><em>工程师A完成发布</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-9maryfinishes.png" alt="图十"></p>
+<p>一旦准备好了对外发布，工程师A合并修改到master分支和develop分支上，删除发布分支。合并回develop分支很重要，因为在发布分支中已经提交的更新需要在后面的新功能中也要是可用的。另外，如果工程师A的团队要求Code Review，这是一个发起Pull Request的理想时机。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git checkout master</div><div class="line">git merge release-<span class="number">0.1</span></div><div class="line">git push</div><div class="line">git checkout develop</div><div class="line">git merge release-<span class="number">0.1</span></div><div class="line">git push</div><div class="line">git branch <span class="operator">-d</span> release-<span class="number">0.1</span></div></pre></td></tr></table></figure>
+
+<p>发布分支是作为功能开发（develop分支）和对外发布（master分支）间的缓冲。只要有合并到master分支，就应该打好Tag以方便跟踪。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag <span class="operator">-a</span> <span class="number">0.1</span> -m <span class="string">"Initial public release"</span> master</div><div class="line">git push --tags</div></pre></td></tr></table></figure>
+
+<p>Git有提供各种勾子（hook），即仓库有事件发生时触发执行的脚本。可以配置一个勾子，在你push中央仓库的master分支时，自动构建好对外发布。</p>
+<h4 id="最终用户发现Bug"><em>最终用户发现Bug</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-gitflow-enduserbug.png" alt="图十一"></p>
+<p>对外发布后，工程师A回去和工程师B一起做下个发布的新功能开发，直到有最终用户开了一个Ticket抱怨当前版本的一个Bug。为了处理Bug，工程师A（或工程师B）从master分支上拉出了一个维护分支，提交修改以解决问题，然后直接合并回master分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b issue-<span class="comment">#001 master</span></div></pre></td></tr></table></figure>
+
+<p>Fix the bug</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkout master</div><div class="line">git merge issue-<span class="comment">#001</span></div><div class="line">git push</div></pre></td></tr></table></figure>
+
+<p>就像发布分支，维护分支中新加这些重要修改需要包含到develop分支中，所以工程师A要执行一个合并操作。然后就可以安全地删除这个分支了：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout develop</div><div class="line">git merge issue-<span class="comment">#001</span></div><div class="line">git push</div><div class="line">git branch <span class="operator">-d</span> issue-<span class="comment">#001</span></div></pre></td></tr></table></figure>
+
+<h2 id="最后">最后</h2>
+<p>Git是一个不错的版本管理工具，但也仅仅是工具。记住，这里演示的工作流只是可能用法的例子，而不是在实际工作中使用Git不可违逆的条例。所以不要畏惧按自己需要对工作流的用法做取舍。不变的目标就是让Git为你所用。</p>
+<h2 id="参考资料">参考资料</h2>
+<ol>
+<li><strong>Comparing Workflows</strong> <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/" target="_blank" rel="external">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/</a></li>
+<li><strong>Git 版本控制系統</strong> <a href="http://ihower.tw/git/index.html" target="_blank" rel="external">http://ihower.tw/git/index.html</a></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本篇博客讲解了git的一些基本的团队协作命令，和GitFlow工作流指南]]>
+    
+    </summary>
+    
+      <category term="git" scheme="http://myqianlan.com/tags/git/"/>
+    
+      <category term="教程" scheme="http://myqianlan.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[常用终端命令]]></title>
+    <link href="http://myqianlan.com/2014/11/14/terminal-common-used-commands/"/>
+    <id>http://myqianlan.com/2014/11/14/terminal-common-used-commands/</id>
+    <published>2014-11-14T13:57:08.000Z</published>
+    <updated>2014-11-14T14:47:18.000Z</updated>
+    <content type="html"><![CDATA[<p>一些自己收集的终端常用命令<a id="more"></a></p>
+<h2 id="关于Linux文件和目录的命令">关于Linux文件和目录的命令</h2>
+<ul>
+<li>ls 列出当前目录文件（不包括隐含文件）</li>
+<li>ls -a 列出当前目录文件（包括隐含文件）</li>
+<li>ls -l 列出当前目录下文件的详细信息</li>
+<li>cd .. 回当前目录的上一级目录</li>
+<li>cd – 回上一次所在的目录</li>
+<li>cd ~ 或 cd 回当前用户的宿主目录</li>
+<li>mkdir 目录名 创建一个目录</li>
+<li>rmdir 空目录名 删除一个空目录</li>
+<li>rm 文件名 文件名 删除一个文件或多个文件</li>
+<li>rm -rf 非空目录名 删除一个非空目录下的一切</li>
+<li>mv 路经/文件 /经/文件移动相对路经下的文件到绝对路经下</li>
+<li>mv 文件名 新名称 在当前目录下改名</li>
+</ul>
+<h2 id="DOS_常用命令">DOS 常用命令</h2>
+<ul>
+<li><p>dir 列文件名</p>
+<pre><code>  显示目录文件和子目录列表，呵呵，这个当然是人人要知道的。 
+  可以使用通配符（? 和 <span class="keyword">*</span>），？表通配一个字符，<span class="keyword">*</span>表通配任意字符 
+  <span class="keyword">*</span>.后缀 
+  指定要查看后缀的文件。 上面其实也可以为“ . 后缀”,例如dir <span class="keyword">*</span>.exe 等于dir .exe 
+  /p 
+  每次显示一个列表屏幕。要查看下一屏，请按键盘上的任意键。 
+  /w 
+  以宽格式显示列表，在每一行上最多显示 5 个文件名或目录名。 
+  /s 
+  列出指定目录及所有子目录中出现的每个指定的文件名。比win环境下的查找快多了 
+  dir <span class="keyword">*</span>.<span class="keyword">*</span> -&gt; a.txt 把当前目录文件列表写入a.txt 
+  dir <span class="keyword">*</span>.<span class="keyword">*</span> /s -&gt; a.txt 把当前目录文件列表写入a.txt，包括子目录下文件。
+</code></pre></li>
+<li>deltree 删除目录树 </li>
+<li>cls 清屏 </li>
+<li>cd 改变当前目录  </li>
+<li>copy 拷贝文件  </li>
+<li>del 删除文件   </li>
+<li>move 移动文件、改目录名 </li>
+<li>more 分屏显示 </li>
+<li>type 显示文件内容 </li>
+<li>time 显示及修改时间  </li>
+<li><p>tree 列目录树 </p>
+<pre><code>  tree    表示路径扫描只显示路径，不显示路径下的文件名及扩展名
+  tree /f 表示全路径扫描结果中包含文件名及扩展名
+  tree /f D:\ &gt;<span class="keyword">LIST</span>.txt  批处理，对D盘进行全路径扫描，并将结果保存到<span class="keyword">LIST</span>.TXT中，<span class="keyword">LIST</span>所在路径与批处理文件同路径下.
+</code></pre></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一些自己收集的终端常用命令]]>
+    
+    </summary>
+    
+      <category term="终端" scheme="http://myqianlan.com/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+      <category term="命令" scheme="http://myqianlan.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[前端开发中的一些chrome插件推荐]]></title>
@@ -91,7 +326,7 @@
     <link href="http://myqianlan.com/2014/11/11/sometimes-i-thinks/"/>
     <id>http://myqianlan.com/2014/11/11/sometimes-i-thinks/</id>
     <published>2014-11-11T05:50:17.000Z</published>
-    <updated>2014-11-14T05:04:17.000Z</updated>
+    <updated>2014-11-16T11:25:19.000Z</updated>
     <content type="html"><![CDATA[<p>独自漫步于江南</p>
 <p>曾只为拾起</p>
 <p>前世的记忆与企盼<br><a id="more"></a></p>
@@ -118,7 +353,7 @@
     
     </summary>
     
-      <category term="生活" scheme="http://myqianlan.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="随笔" scheme="http://myqianlan.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   

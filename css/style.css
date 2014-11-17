@@ -180,7 +180,7 @@ body {
   background: #eee;
 }
 .mobile-nav-on #wrap {
-  left: 280px;
+  left: 240px;
 }
 @media screen and (min-width: 768px) {
   #main {
@@ -192,7 +192,7 @@ body {
 }
 .article-date,
 .article-category-link,
-.archive-year,
+.archive-date,
 .widget-title {
   text-decoration: none;
   text-transform: uppercase;
@@ -1112,7 +1112,7 @@ a.article-title:hover {
 .archives:after {
   clear: both;
 }
-.archive-year-wrap {
+.archive-date-wrap {
   margin-bottom: 1em;
   line-height: 1em;
 }
@@ -1120,6 +1120,9 @@ a.article-title:hover {
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .archives {
@@ -1428,7 +1431,7 @@ pre .javascript .function {
     position: absolute;
     top: 0;
     left: 0;
-    width: 280px;
+    width: 240px;
     height: 100%;
     background: #191919;
     border-right: 1px solid #fff;
@@ -1448,6 +1451,7 @@ pre .javascript .function {
 }
 #totop {
   position: fixed;
+  display: none;
   z-index: 9999;
   bottom: 5em;
   right: 1em;

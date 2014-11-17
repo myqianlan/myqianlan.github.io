@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档 | myqianlan</title>
+  <title>常用终端命令 | myqianlan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="author" content="myqianlan">
   
-    <meta name="description" content="浅蓝的博客，记载着工作生活学习的点点滴滴">
+    <meta name="description" content="一些自己收集的终端常用命令">
   
   <meta name="keywords" content="前端，技术，记录，浅蓝，myqianlan，moyi">
   
@@ -76,120 +76,121 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-date-wrap">
-          <a href="/archives/11月 2014" class="archive-date">11月 2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014/11/15/git-tips-and-gitflow/" class="archive-article-date">
-  <time datetime="2014-11-15T06:08:44.000Z" itemprop="datePublished">15日</time>
-  <!-- <time datetime="2014-11-15T06:08:44.000Z" itemprop="datePublished">11月 15 2014</time> -->
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/11/15/git-tips-and-gitflow/">Git基本命令和GitFlow工作流</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014/11/14/terminal-common-used-commands/" class="archive-article-date">
-  <time datetime="2014-11-14T13:57:08.000Z" itemprop="datePublished">14日</time>
+        <section id="main"><article id="post-terminal-common-used-commands" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/11/14/terminal-common-used-commands/" class="article-date">
+  <time datetime="2014-11-14T13:57:08.000Z" itemprop="datePublished">11月 14 2014</time>
   <!-- <time datetime="2014-11-14T13:57:08.000Z" itemprop="datePublished">11月 14 2014</time> -->
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/11/14/terminal-common-used-commands/">常用终端命令</a>
+    <h1 class="article-title" itemprop="name">
+      常用终端命令
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014/11/13/frontend-usefull-chrome-plugins/" class="archive-article-date">
-  <time datetime="2014-11-13T05:22:52.000Z" itemprop="datePublished">13日</time>
-  <!-- <time datetime="2014-11-13T05:22:52.000Z" itemprop="datePublished">11月 13 2014</time> -->
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/11/13/frontend-usefull-chrome-plugins/">前端开发中的一些chrome插件推荐</a>
-    </h1>
-  
+        <p>一些自己收集的终端常用命令<a id="more"></a></p>
+<h2 id="关于Linux文件和目录的命令">关于Linux文件和目录的命令</h2>
+<ul>
+<li>ls 列出当前目录文件（不包括隐含文件）</li>
+<li>ls -a 列出当前目录文件（包括隐含文件）</li>
+<li>ls -l 列出当前目录下文件的详细信息</li>
+<li>cd .. 回当前目录的上一级目录</li>
+<li>cd – 回上一次所在的目录</li>
+<li>cd ~ 或 cd 回当前用户的宿主目录</li>
+<li>mkdir 目录名 创建一个目录</li>
+<li>rmdir 空目录名 删除一个空目录</li>
+<li>rm 文件名 文件名 删除一个文件或多个文件</li>
+<li>rm -rf 非空目录名 删除一个非空目录下的一切</li>
+<li>mv 路经/文件 /经/文件移动相对路经下的文件到绝对路经下</li>
+<li>mv 文件名 新名称 在当前目录下改名</li>
+</ul>
+<h2 id="DOS_常用命令">DOS 常用命令</h2>
+<ul>
+<li><p>dir 列文件名</p>
+<pre><code>  显示目录文件和子目录列表，呵呵，这个当然是人人要知道的。 
+  可以使用通配符（? 和 <span class="keyword">*</span>），？表通配一个字符，<span class="keyword">*</span>表通配任意字符 
+  <span class="keyword">*</span>.后缀 
+  指定要查看后缀的文件。 上面其实也可以为“ . 后缀”,例如dir <span class="keyword">*</span>.exe 等于dir .exe 
+  /p 
+  每次显示一个列表屏幕。要查看下一屏，请按键盘上的任意键。 
+  /w 
+  以宽格式显示列表，在每一行上最多显示 5 个文件名或目录名。 
+  /s 
+  列出指定目录及所有子目录中出现的每个指定的文件名。比win环境下的查找快多了 
+  dir <span class="keyword">*</span>.<span class="keyword">*</span> -&gt; a.txt 把当前目录文件列表写入a.txt 
+  dir <span class="keyword">*</span>.<span class="keyword">*</span> /s -&gt; a.txt 把当前目录文件列表写入a.txt，包括子目录下文件。
+</code></pre></li>
+<li>deltree 删除目录树 </li>
+<li>cls 清屏 </li>
+<li>cd 改变当前目录  </li>
+<li>copy 拷贝文件  </li>
+<li>del 删除文件   </li>
+<li>move 移动文件、改目录名 </li>
+<li>more 分屏显示 </li>
+<li>type 显示文件内容 </li>
+<li>time 显示及修改时间  </li>
+<li><p>tree 列目录树 </p>
+<pre><code>  tree    表示路径扫描只显示路径，不显示路径下的文件名及扩展名
+  tree /f 表示全路径扫描结果中包含文件名及扩展名
+  tree /f D:\ &gt;<span class="keyword">LIST</span>.txt  批处理，对D盘进行全路径扫描，并将结果保存到<span class="keyword">LIST</span>.TXT中，<span class="keyword">LIST</span>所在路径与批处理文件同路径下.
+</code></pre></li>
+</ul>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014/11/11/right-time-to-use-html5-tags/" class="archive-article-date">
-  <time datetime="2014-11-11T06:49:08.000Z" itemprop="datePublished">11日</time>
-  <!-- <time datetime="2014-11-11T06:49:08.000Z" itemprop="datePublished">11月 11 2014</time> -->
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/11/11/right-time-to-use-html5-tags/">是时候全面使用html5标签了</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014/11/11/sometimes-i-thinks/" class="archive-article-date">
-  <time datetime="2014-11-11T05:50:17.000Z" itemprop="datePublished">11日</time>
-  <!-- <time datetime="2014-11-11T05:50:17.000Z" itemprop="datePublished">11月 11 2014</time> -->
-</a>
+    </div>
+    <footer class="article-footer">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/11/11/sometimes-i-thinks/">偶感</a>
-    </h1>
-  
+        <a data-url="http://myqianlan.com/2014/11/14/terminal-common-used-commands/" data-id="1yheff1owmsihth8" class="article-share-link" data-share="baidu">分享</a>
+      
 
-    </header>
+      
+        <a href="http://myqianlan.com/2014/11/14/terminal-common-used-commands/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令/">命令</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/终端/">终端</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/11/15/git-tips-and-gitflow/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          Git基本命令和GitFlow工作流
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/11/13/frontend-usefull-chrome-plugins/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">前端开发中的一些chrome插件推荐</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2014/11/14/terminal-common-used-commands/" data-title="常用终端命令" data-url="http://myqianlan.com/2014/11/14/terminal-common-used-commands/"></div>
+  </section>
 </section>
         
           <aside id="sidebar">
