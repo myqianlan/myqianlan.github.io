@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-11-17T07:58:20.770Z</updated>
+  <updated>2014-11-20T02:04:42.830Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -13,6 +13,105 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[极其简单的使用基于gulp和sass前端工作流]]></title>
+    <link href="http://myqianlan.com/2014/11/19/a-simple-workflow-with-gulp-and-sass/"/>
+    <id>http://myqianlan.com/2014/11/19/a-simple-workflow-with-gulp-and-sass/</id>
+    <published>2014-11-19T09:23:04.000Z</published>
+    <updated>2014-11-20T02:03:57.000Z</updated>
+    <content type="html"><![CDATA[<p>简单的记录自己如何在实际工作中使用gulp和sass的。我的原则是，小而美！<a id="more"></a></p>
+<h2 id="gulp与sass介绍">gulp与sass介绍</h2>
+<h3 id="gulp">gulp</h3>
+<p>什么是gulp?和Grunt一样，是一种任务管理工具；和Grunt又不一样，gulp是一种基于流的，代码优于配置的新一代构建工具。</p>
+<p>Gulp 和 Grunt 类似，但相比于Grunt的频繁的IO操作，Gulp的流操作，能更快地完成构建。</p>
+<h3 id="sass">sass</h3>
+<p>Sass是”<em>Syntactically Awesome StyleSheets</em>“的简称。如同less,stylus一样，是“CSS预处理器”中的一种，你可以称其是工具或者是语言。在我看来，sass除了不够小而美以外，确实是很强大的。Sass官网上是这么来描述的：</p>
+<blockquote>
+<p>Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly, particularly with the help of the Compass style library.</p>
+</blockquote>
+<h3 id="如何安装gulp与sass">如何安装gulp与sass</h3>
+<p>自己上网谷歌或者百度去！</p>
+<h2 id="使用的包">使用的包</h2>
+<p>一部分是gulp插件，一部分是开启本地服务器所需要的。</p>
+<ul>
+<li>gulp-sass</li>
+<li>gulp-sourcemaps</li>
+<li>gulp-uglify</li>
+<li>gulp-minifycss</li>
+<li>gulp-rename</li>
+<li>gulp-autoprefixer</li>
+<li>http</li>
+<li>connect</li>
+<li>open</li>
+</ul>
+<p>package.json文件内容</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">  <span class="string">"name"</span>: <span class="string">"f2e-workflow"</span>,</div><div class="line">  <span class="string">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">  <span class="string">"description"</span>: <span class="string">"a f2e workflow with gulp and sass"</span>,</div><div class="line">  <span class="string">"main"</span>: <span class="string">"gulpfile.js"</span>,</div><div class="line">  <span class="string">"scripts"</span>: {</div><div class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" && exit 1"</span></div><div class="line">  },</div><div class="line">  <span class="string">"author"</span>: <span class="string">"myqianlan (linquantan@gmail.com)"</span>,</div><div class="line">  <span class="string">"license"</span>: <span class="string">"MIT"</span>,</div><div class="line">  <span class="string">"devDependencies"</span>: {</div><div class="line">    <span class="string">"connect"</span>: <span class="string">"~2.12.0"</span>,</div><div class="line">    <span class="string">"gulp"</span>: <span class="string">"^3.8.8"</span>,</div><div class="line">    <span class="string">"gulp-autoprefixer"</span>: <span class="string">"^1.0.1"</span>,</div><div class="line">    <span class="string">"gulp-clean"</span>: <span class="string">"^0.3.1"</span>,</div><div class="line">    <span class="string">"gulp-minify-css"</span>: <span class="string">"^0.3.10"</span>,</div><div class="line">    <span class="string">"gulp-rename"</span>: <span class="string">"^1.2.0"</span>,</div><div class="line">    <span class="string">"gulp-sass"</span>: <span class="string">"^1.1.0"</span>,</div><div class="line">    <span class="string">"gulp-sourcemaps"</span>: <span class="string">"^1.2.8"</span>,</div><div class="line">    <span class="string">"gulp-uglify"</span>: <span class="string">"^1.0.1"</span>,</div><div class="line">    <span class="string">"open"</span>: <span class="string">"~0.0.4"</span></div><div class="line">  }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<h2 id="gulp任务管理">gulp任务管理</h2>
+<p>通过gulp做了如下任务：</p>
+<ul>
+<li>sass编译，并且生成sourcemap,方便调试</li>
+<li>自动添加浏览器前缀</li>
+<li>css、js文件压缩</li>
+<li>本地服务器</li>
+<li>自动监听</li>
+</ul>
+<p>gulpfile.js文件内容</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * @author myqianlan</div><div class="line"> * @date 2014年11月19日17:12:44</div><div class="line"> */</div><div class="line"><span class="comment">// 包含gulp   </span></div><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 包含插件   </span></div><div class="line"><span class="comment">// sass 编译</span></div><div class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</div><div class="line"><span class="comment">//sourcemaps</span></div><div class="line"><span class="keyword">var</span> sourcemaps = <span class="built_in">require</span>(<span class="string">'gulp-sourcemaps'</span>);</div><div class="line"><span class="comment">// 压缩JS</span></div><div class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">'gulp-uglify'</span>);</div><div class="line"><span class="comment">// 压缩CSS</span></div><div class="line"><span class="keyword">var</span> minifycss = <span class="built_in">require</span>(<span class="string">'gulp-minify-css'</span>);</div><div class="line"><span class="comment">// 重命名</span></div><div class="line"><span class="keyword">var</span> rename = <span class="built_in">require</span>(<span class="string">'gulp-rename'</span>);</div><div class="line"><span class="comment">// 自动加CSS浏览器前缀</span></div><div class="line"><span class="keyword">var</span> autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// Server</span></div><div class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line"><span class="keyword">var</span> connect = <span class="built_in">require</span>(<span class="string">'connect'</span>);</div><div class="line"><span class="keyword">var</span> open = <span class="built_in">require</span>(<span class="string">'open'</span>);</div><div class="line"></div><div class="line"><span class="comment">// Server Settings</span></div><div class="line"><span class="keyword">var</span> root = <span class="string">'./app'</span>;</div><div class="line"><span class="keyword">var</span> port = <span class="number">3000</span>;</div><div class="line"><span class="keyword">var</span> host = <span class="string">'localhost'</span>;</div><div class="line"><span class="keyword">var</span> protocol = <span class="string">'http'</span>;</div><div class="line"></div><div class="line">gulp.task(<span class="string">'server'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    <span class="keyword">var</span> app = connect().use(connect.static(root));</div><div class="line"></div><div class="line">    http.createServer(app).listen(port);</div><div class="line">    open(protocol + <span class="string">'://'</span> + host + <span class="string">':'</span> + port + <span class="string">'/index.html'</span>);</div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// Compile SASS  </span></div><div class="line"><span class="comment">// with node sass</span></div><div class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    gulp.src(root + <span class="string">'/scss/**/*.scss'</span>)</div><div class="line">        .pipe(sourcemaps.init())</div><div class="line">        .pipe(sass({</div><div class="line">            errLogToConsole: <span class="literal">true</span></div><div class="line">        }))</div><div class="line">        .pipe(sourcemaps.write(<span class="string">'./maps'</span>,{debug: <span class="literal">true</span>, includeContent: <span class="literal">false</span>}))</div><div class="line">        .pipe(gulp.dest(root + <span class="string">'/css'</span>));</div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// 自动添加浏览器前缀</span></div><div class="line"><span class="comment">// By default, Autoprefixer uses &gt; 1%, last 2 versions, Firefox ESR, Opera 12.1</span></div><div class="line">gulp.task(<span class="string">'autoprefixer'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    gulp.src(root + <span class="string">'/css/**/*.css'</span>)</div><div class="line">        .pipe(autoprefixer())</div><div class="line">        .pipe(gulp.dest(root + <span class="string">'/css'</span>));</div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// 压缩JS文件 </span></div><div class="line">gulp.task(<span class="string">'minifyjs'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    gulp.src(root + <span class="string">'/js/**/*.js'</span>)</div><div class="line">        .pipe(uglify())</div><div class="line">        .pipe(rename({ suffix: <span class="string">'.min'</span> }))</div><div class="line">        .pipe(gulp.dest(root + <span class="string">'/dist/js'</span>));</div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// 压缩CSS文件   </span></div><div class="line">gulp.task(<span class="string">'minifycss'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    gulp.src(root + <span class="string">'/css/**/*.css'</span>)</div><div class="line">        .pipe(minifycss())</div><div class="line">        .pipe(rename({ suffix: <span class="string">'.min'</span> }))</div><div class="line">        .pipe(gulp.dest(root +<span class="string">'/dist/css'</span>));</div><div class="line">});</div><div class="line"><span class="comment">//</span></div><div class="line">gulp.task(<span class="string">'dev'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    <span class="comment">// 监视scss文件的变化,并且执行sass</span></div><div class="line">    <span class="comment">// 如果scss文件夹为空，任务会中断</span></div><div class="line">    gulp.watch(root + <span class="string">'/scss/**/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// 默认任务   </span></div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'sdev'</span>]);</div><div class="line"></div><div class="line"><span class="comment">// 开发任务</span></div><div class="line">gulp.task(<span class="string">'sdev'</span>, [<span class="string">'sass'</span>, <span class="string">'server'</span>], <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line"></div><div class="line">    <span class="comment">// 监视scss文件的变化,并且执行sass</span></div><div class="line">    gulp.watch(root + <span class="string">'/scss/**/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">});</div><div class="line"><span class="comment">// 不带本地服务器</span></div><div class="line">gulp.task(<span class="string">'dev'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line"></div><div class="line">    <span class="comment">// 监视scss文件的变化,并且执行sass</span></div><div class="line">    gulp.watch(root + <span class="string">'/scss/**/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">});</div><div class="line"><span class="comment">// 构建任务</span></div><div class="line">gulp.task(<span class="string">'build'</span>, [<span class="string">'minifyjs'</span>, <span class="string">'sass'</span>, <span class="string">'autoprefixer'</span>, <span class="string">'minifycss'</span>]);</div></pre></td></tr></table></figure>
+
+<h2 id="如何使用">如何使用</h2>
+<ul>
+<li><p>首先，确保已经安装nodejs（nodejs如何安装？O(∩_∩)O~呵呵）。</p>
+</li>
+<li><p>然后，全局安装gulp</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gulp -g</div></pre></td></tr></table></figure>
+
+<ul>
+<li>clone到本地</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/myqianlan/f2e-workflow.git</div></pre></td></tr></table></figure>
+
+<ul>
+<li>下载依赖</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> f2e-workflow</div><div class="line">npm install</div></pre></td></tr></table></figure>
+
+<ul>
+<li>运行<ul>
+<li>带本地服务器的任务</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp sdev</div></pre></td></tr></table></figure>
+
+<ul>
+<li>不带带本地服务器的任务</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li>最后的构建任务</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp build</div></pre></td></tr></table></figure>
+
+<h2 id="说明">说明</h2>
+<p>我知道这个流程不够强大，但却是最适合我的。期间，我也折腾过各种高大上的流程，但通通都不了了之。所以，大道至简。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>简单的记录自己如何在实际工作中使用gulp和sass的。我的原则是，小而美！]]>
+    
+    </summary>
+    
+      <category term="gulp" scheme="http://myqianlan.com/tags/gulp/"/>
+    
+      <category term="sass" scheme="http://myqianlan.com/tags/sass/"/>
+    
+      <category term="教程" scheme="http://myqianlan.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Git基本命令和GitFlow工作流]]></title>
