@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-11-20T02:32:07.796Z</updated>
+  <updated>2014-11-26T07:12:15.667Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -13,6 +13,58 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[如何使用javascript书写递归函数]]></title>
+    <link href="http://myqianlan.com/2014/11/25/write-recursive-function-in-javascript/"/>
+    <id>http://myqianlan.com/2014/11/25/write-recursive-function-in-javascript/</id>
+    <published>2014-11-25T08:57:00.000Z</published>
+    <updated>2014-11-26T07:11:54.000Z</updated>
+    <content type="html"><![CDATA[<p>递归函数大家都应该比较熟吧？那么，如何在javascript中书写一个完美的递归函数呢？且听我娓娓道来。<a id="more"></a></p>
+<h2 id="递归函数">递归函数</h2>
+<p>写的时候，查了一下维基百科对<a href="http://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0" target="_blank" rel="external">递归函数</a>的定义，恕我愚钝，简直太深奥了！所以，我还是简单的说说我对递归函数的理解吧。递归函数，说白了就是在函数内部引用函数自身，最终到给定的递归结束条件时回溯。当然，你也可以不给定结束条件，死了别挂我~(╯﹏╰)~</p>
+<h2 id="使用javascript书写递归函数">使用javascript书写递归函数</h2>
+<p>现在，一步一步，摩擦摩擦，在皎洁的编辑器上，来开始使用javascript写递归函数吧！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * fun(--num); </div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>好了，不错，一个堪称经典的递归求阶乘的函数诞生了。事情肯定不会这么顺利，一定是个圈套。我们来如下调用以下看看会怎么样？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> test = fun;</div><div class="line">fun = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(test(<span class="number">7</span>));</div></pre></td></tr></table></figure>
+
+<p>呵呵，居然报错了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Uncaught <span class="built_in">TypeError</span>: object is not a <span class="function"><span class="keyword">function</span></span></div></pre></td></tr></table></figure>
+
+<p>嗯，报了类型错误。。。</p>
+<p>回过头去看看我们是如何调用的。发现问题了吧！我们把fun赋给了test，然后把fun给回收掉了。为什么会出错呢？因为像function这种赋值其实是引用传递，只是把指向函数的指针（这里说地址也行）赋给test了。但我们把fun赋值为null的时候，函数都已经被回收了，拿什么来执行？知道问题所在了，我决定换种方式来定义：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * <span class="built_in">arguments</span>.callee(--num); </div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>然后测试一下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> test = fun;</div><div class="line">fun = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(test(<span class="number">7</span>));</div></pre></td></tr></table></figure>
+
+<p>OK，测试通过！</p>
+<p>但是在某一天，当我实际码代码的时候，问题又出现了。什么问题呢？我们来看一下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Uncaught <span class="built_in">TypeError</span>: <span class="string">'caller'</span>, <span class="string">'callee'</span>, and <span class="string">'arguments'</span> properties may not be accessed on strict mode functions or the <span class="built_in">arguments</span> objects <span class="keyword">for</span> calls to them</div></pre></td></tr></table></figure>
+
+<p>╮(╯▽╰)╭哎！可怜啊！因为我使用了<strong>“use strict”</strong>！严格模式下是不允许的。。。</p>
+<p>好吧！继续想办法！既然不能使用arguments.callee()，那还是想想其他的方式吧。</p>
+<p>看下面的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fun = (<span class="function"><span class="keyword">function</span> <span class="title">f</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * f(--num); </div><div class="line">    }</div><div class="line">});</div></pre></td></tr></table></figure>
+
+<p>然后我测试了以下，神奇的通过了，暂时没有发现任何问题！</p>
+<p>为什么呢？因为我们使用了“（）”，巧妙地使用命名函数表达式来达到了同样的效果。</p>
+<h2 id="参考资料">参考资料</h2>
+<ol>
+<li><strong>《JavaScript高级程序设计（第三版）》</strong></li>
+<li><strong>《JavaScript启示录》</strong></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>递归函数大家都应该比较熟吧？那么，如何在javascript中书写一个完美的递归函数呢？且听我娓娓道来。]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://myqianlan.com/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[极其简单的使用基于gulp和sass前端工作流]]></title>

@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>标签终端 | myqianlan</title>
+  <title>如何使用javascript书写递归函数 | myqianlan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="author" content="myqianlan">
   
-    <meta name="description" content="浅蓝的博客，记载着工作生活学习的点点滴滴">
+    <meta name="description" content="递归函数大家都应该比较熟吧？那么，如何在javascript中书写一个完美的递归函数呢？且听我娓娓道来。">
   
   <meta name="keywords" content="前端，技术，记录，浅蓝，myqianlan，moyi">
   
@@ -76,40 +76,96 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-date-wrap">
-          <a href="/archives/11月 2014" class="archive-date">11月 2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014/11/14/terminal-common-used-commands/" class="archive-article-date">
-  <time datetime="2014-11-14T13:57:08.000Z" itemprop="datePublished">14日</time>
-  <!-- <time datetime="2014-11-14T13:57:08.000Z" itemprop="datePublished">11月 14 2014</time> -->
+        <section id="main"><article id="post-write-recursive-function-in-javascript" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/11/25/write-recursive-function-in-javascript/" class="article-date">
+  <time datetime="2014-11-25T08:57:00.000Z" itemprop="datePublished">11月 25 2014</time>
+  <!-- <time datetime="2014-11-25T08:57:00.000Z" itemprop="datePublished">11月 25 2014</time> -->
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/11/14/terminal-common-used-commands/">常用终端命令</a>
+    <h1 class="article-title" itemprop="name">
+      如何使用javascript书写递归函数
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>递归函数大家都应该比较熟吧？那么，如何在javascript中书写一个完美的递归函数呢？且听我娓娓道来。<a id="more"></a></p>
+<h2 id="递归函数">递归函数</h2>
+<p>写的时候，查了一下维基百科对<a href="http://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0" target="_blank" rel="external">递归函数</a>的定义，恕我愚钝，简直太深奥了！所以，我还是简单的说说我对递归函数的理解吧。递归函数，说白了就是在函数内部引用函数自身，最终到给定的递归结束条件时回溯。当然，你也可以不给定结束条件，死了别挂我~(╯﹏╰)~</p>
+<h2 id="使用javascript书写递归函数">使用javascript书写递归函数</h2>
+<p>现在，一步一步，摩擦摩擦，在皎洁的编辑器上，来开始使用javascript写递归函数吧！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * fun(--num); </div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>好了，不错，一个堪称经典的递归求阶乘的函数诞生了。事情肯定不会这么顺利，一定是个圈套。我们来如下调用以下看看会怎么样？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> test = fun;</div><div class="line">fun = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(test(<span class="number">7</span>));</div></pre></td></tr></table></figure>
+
+<p>呵呵，居然报错了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Uncaught <span class="built_in">TypeError</span>: object is not a <span class="function"><span class="keyword">function</span></span></div></pre></td></tr></table></figure>
+
+<p>嗯，报了类型错误。。。</p>
+<p>回过头去看看我们是如何调用的。发现问题了吧！我们把fun赋给了test，然后把fun给回收掉了。为什么会出错呢？因为像function这种赋值其实是引用传递，只是把指向函数的指针（这里说地址也行）赋给test了。但我们把fun赋值为null的时候，函数都已经被回收了，拿什么来执行？知道问题所在了，我决定换种方式来定义：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * <span class="built_in">arguments</span>.callee(--num); </div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>然后测试一下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> test = fun;</div><div class="line">fun = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(test(<span class="number">7</span>));</div></pre></td></tr></table></figure>
+
+<p>OK，测试通过！</p>
+<p>但是在某一天，当我实际码代码的时候，问题又出现了。什么问题呢？我们来看一下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Uncaught <span class="built_in">TypeError</span>: <span class="string">'caller'</span>, <span class="string">'callee'</span>, and <span class="string">'arguments'</span> properties may not be accessed on strict mode functions or the <span class="built_in">arguments</span> objects <span class="keyword">for</span> calls to them</div></pre></td></tr></table></figure>
+
+<p>╮(╯▽╰)╭哎！可怜啊！因为我使用了<strong>“use strict”</strong>！严格模式下是不允许的。。。</p>
+<p>好吧！继续想办法！既然不能使用arguments.callee()，那还是想想其他的方式吧。</p>
+<p>看下面的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fun = (<span class="function"><span class="keyword">function</span> <span class="title">f</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * f(--num); </div><div class="line">    }</div><div class="line">});</div></pre></td></tr></table></figure>
+
+<p>然后我测试了以下，神奇的通过了，暂时没有发现任何问题！</p>
+<p>为什么呢？因为我们使用了“（）”，巧妙地使用命名函数表达式来达到了同样的效果。</p>
+<h2 id="参考资料">参考资料</h2>
+<ol>
+<li><strong>《JavaScript高级程序设计（第三版）》</strong></li>
+<li><strong>《JavaScript启示录》</strong></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://myqianlan.com/2014/11/25/write-recursive-function-in-javascript/" data-id="rr3mpqq3yjm6apem" class="article-share-link" data-share="baidu">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2014/11/19/a-simple-workflow-with-gulp-and-sass/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">极其简单的使用基于gulp和sass前端工作流</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2014/11/25/write-recursive-function-in-javascript/" data-title="如何使用javascript书写递归函数" data-url="http://myqianlan.com/2014/11/25/write-recursive-function-in-javascript/"></div>
+  </section>
 </section>
         
           <aside id="sidebar">
