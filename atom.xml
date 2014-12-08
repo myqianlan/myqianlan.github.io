@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-12-04T00:33:10.363Z</updated>
+  <updated>2014-12-08T02:06:22.120Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -13,6 +13,49 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[也说border-box盒模型]]></title>
+    <link href="http://myqianlan.com/2014/12/08/talk-about-border-box/"/>
+    <id>http://myqianlan.com/2014/12/08/talk-about-border-box/</id>
+    <published>2014-12-08T00:50:45.000Z</published>
+    <updated>2014-12-08T02:05:58.000Z</updated>
+    <content type="html"><![CDATA[<p>border-box是css3的一个新属性，使用这个属性，和以往的content-box比起来，会有诸多便利之处，bootstrap3也使用的是这个border-box，甚至很多人认为，border-box才是我们真正所需要的盒模型。或许，这也是W3C为何加入这个属性的原因之一吧。<a id="more"></a></p>
+<h2 id="介绍">介绍</h2>
+<p>border-box与content-box有什么不同？我们先来demo一下，一探究竟。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="id">#box1</span><span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">150px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">4px</span> dashed orange</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> gray</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> <span class="number">20px</span></span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#box2</span><span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> content-box</span></span>;<span class="comment">/*其实也可以不写这句，因为默认为content-box*/</span></div><div class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">150px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">4px</span> dashed orange</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> gray</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>ok.来看一下效果：<br><img src="http://myqianlan.qiniudn.com/blog/2014/12/08/box-sizing-demo.png" alt="demo"><br>嗯，这就是border-box;<a href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank" rel="external">w3schools</a>中对这个属性的描述：<br><img src="http://myqianlan.qiniudn.com/blog/2014/12/08/box-sizing.png" alt="box-sizing"><br>使用这个属性，再也不会因为修改border和padding而使修改布局大动干戈了。</p>
+<h2 id="最佳化实践">最佳化实践</h2>
+<p>接下来就是如何在项目中使用这个属性了。借用一篇博客，<a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/" target="_blank" rel="external">http://www.paulirish.com/2012/box-sizing-border-box-ftw/</a><br>这篇博客中描述了如何更好的使用这个属性。在此之前，我都是这样用的：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*更改盒模型为border-box*/</span></div><div class="line">*, *<span class="pseudo">:before</span>, *<span class="pseudo">:after</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">-webkit-box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">-moz-box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>嗯，或许你也是这样用的。<em> 选择器效率也不错，只要你不这样使用 .foo &gt; </em> 。看了这篇文章过后我才发现，特么的原来我这样使用是有问题的。因为我强制全局所有的使用这个规范，这导致对组件十分不友好！</p>
+<p>看看前辈是如何使用：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* apply a natural box layout model to all elements, but allowing components to change */</span></div><div class="line"><span class="tag">html</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line">*, *<span class="pseudo">:before</span>, *<span class="pseudo">:after</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> inherit</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>不错，使用了继承！而且没有使用浏览器前缀！因为现代浏览器，IE8+都是支持这个属性的。在不需要做兼容时，去掉前缀吧。给出一张兼容性的图片，也可以直接访问<a href="http://html5please.com/#box-sizing" target="_blank" rel="external">html5please.com</a>：<br><img src="http://myqianlan.qiniudn.com/blog/2014/12/08/box-sizing-support.png" alt="support"><br>IE67我们使用那个.htc文件，最好使用IE条件注释来引入，毕竟15k的大小呢（不建议让无辜的现代浏览器用户来为这15k买单）。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">&lt;!--[if lte IE7]&gt;  </span></div><div class="line">    &lt;link rel="stylesheet" href="css/ie--box-border.css"&gt;  </div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">* <span class="rules">{  </span></div><div class="line">     <span class="rule"><span class="attribute">behavior</span>:<span class="value"> <span class="function">url</span>(css/boxsizing.htc)</span></span>;  </div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>嗯，就这样，兼容IE6+了，就算在中国这么严峻的形势下，也可happy的使用了。</p>
+<h2 id="反思">反思</h2>
+<p>不假思索，不加思考的就这样用了border-box真的好么？border-box不会破坏本层级的布局，但是当我们改变一个盒子的表现时，我们会发现，所有的嵌套元素发生了一些改变，尽管我们并没有对嵌套元素做什么。这样，可能又会引入一些新的不可预知的问题，或许这些问题会导致布局比以往变得更加复杂！</p>
+<p>到底该使用哪个？君请随意，适合自己的永远是最好的！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>border-box是css3的一个新属性，使用这个属性，和以往的content-box比起来，会有诸多便利之处，bootstrap3也使用的是这个border-box，甚至很多人认为，border-box才是我们真正所需要的盒模型。或许，这也是W3C为何加入这个属性的原因之一吧。]]>
+    
+    </summary>
+    
+      <category term="布局" scheme="http://myqianlan.com/tags/%E5%B8%83%E5%B1%80/"/>
+    
+      <category term="兼容" scheme="http://myqianlan.com/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[前端开发中的一些chrome插件推荐]]></title>

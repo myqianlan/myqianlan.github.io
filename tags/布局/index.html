@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>极其简单的使用基于gulp和sass前端工作流 | myqianlan</title>
+  <title>标签布局 | myqianlan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="author" content="myqianlan">
   
-    <meta name="description" content="简单的记录自己如何在实际工作中使用gulp和sass的。我的原则是，小而美！">
+    <meta name="description" content="浅蓝的博客，记载着工作生活学习的点点滴滴">
   
   <meta name="keywords" content="前端，技术，记录，浅蓝，myqianlan，moyi">
   
@@ -76,117 +76,40 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-a-simple-workflow-with-gulp-and-sass" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12/01/a-simple-workflow-with-gulp-and-sass/" class="article-date">
-  <time datetime="2014-12-01T02:23:04.000Z" itemprop="datePublished">12月 01 2014</time>
-  <!-- <time datetime="2014-12-01T02:23:04.000Z" itemprop="datePublished">12月 1 2014</time> -->
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      极其简单的使用基于gulp和sass前端工作流
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-date-wrap">
+          <a href="/archives/" class="archive-date">12月 2014</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2014/12/08/talk-about-border-box/" class="archive-article-date">
+  <time datetime="2014-12-08T00:50:45.000Z" itemprop="datePublished">8日</time>
+  <!-- <time datetime="2014-12-08T00:50:45.000Z" itemprop="datePublished">12月 8 2014</time> -->
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2014/12/08/talk-about-border-box/">也说border-box盒模型</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>简单的记录自己如何在实际工作中使用gulp和sass的。我的原则是，小而美！<a id="more"></a></p>
-<h2 id="gulp与sass介绍">gulp与sass介绍</h2>
-<h3 id="gulp">gulp</h3>
-<p>什么是gulp?和Grunt一样，是一种任务管理工具；和Grunt又不一样，gulp是一种基于流的，代码优于配置的新一代构建工具。</p>
-<p>Gulp 和 Grunt 类似，但相比于Grunt的频繁的IO操作，Gulp的流操作，能更快地完成构建。</p>
-<h3 id="sass">sass</h3>
-<p>Sass是”<em>Syntactically Awesome StyleSheets</em>“的简称。如同less,stylus一样，是“CSS预处理器”中的一种，你可以称其是工具或者是语言。在我看来，sass除了不够小而美以外，确实是很强大的。Sass官网上是这么来描述的：</p>
-<blockquote>
-<p>Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly, particularly with the help of the Compass style library.</p>
-</blockquote>
-<h3 id="如何安装gulp与sass">如何安装gulp与sass</h3>
-<p>自己上网谷歌或者百度去！</p>
-<h2 id="gulp任务管理">gulp任务管理</h2>
-<p>通过gulp做了如下任务：</p>
-<ul>
-<li>sass预编译，并且生成sourcemap,方便调试</li>
-<li>autoprefixer后编译,自动添加浏览器前缀</li>
-<li>css、js、图片等文件压缩</li>
-<li>js代码检查</li>
-<li>本地服务器</li>
-<li>自动监听</li>
-</ul>
-<h2 id="如何使用">如何使用</h2>
-<ul>
-<li><p>首先，确保已经安装nodejs（nodejs如何安装？O(∩_∩)O~呵呵）。</p>
-</li>
-<li><p>然后，全局安装gulp</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gulp -g</div></pre></td></tr></table></figure>
-
-<ul>
-<li>clone到本地</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/myqianlan/f2e-workflow.git</div></pre></td></tr></table></figure>
-
-<ul>
-<li>下载依赖</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> f2e-workflow</div><div class="line">npm install</div></pre></td></tr></table></figure>
-
-<ul>
-<li>运行</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp <span class="built_in">help</span></div></pre></td></tr></table></figure>
-
-<h2 id="说明">说明</h2>
-<p>我知道这个流程不够强大，但却是最适合我的。期间，我也折腾过各种高大上的流程，但通通都不了了之。所以，大道至简。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://myqianlan.com/2014/12/01/a-simple-workflow-with-gulp-and-sass/" data-id="iorb6dg79pzz7ysn" class="article-share-link" data-share="baidu">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gulp/">gulp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sass/">sass</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2014/12/03/frontend-usefull-chrome-plugins/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          前端开发中的一些chrome插件推荐
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2014/11/25/write-recursive-function-in-javascript/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">如何使用javascript书写递归函数</div>
-    </a>
-  
-</nav>
-
-  
 </article>
-
-
-  <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="2014/12/01/a-simple-workflow-with-gulp-and-sass/" data-title="极其简单的使用基于gulp和sass前端工作流" data-url="http://myqianlan.com/2014/12/01/a-simple-workflow-with-gulp-and-sass/"></div>
-  </section>
+  
+  
+    </div></section>
+  
 </section>
         
           <aside id="sidebar">
