@@ -125,9 +125,12 @@
 <p><img src="http://myqianlan.qiniudn.com/blog/2014/12/10event-old.png" alt="event-old"></p>
 <p>而现在常用的DOM2级事件流（也称标准事件模型）是包括了三个阶段：事件捕获阶段，处于目标阶段和事件冒泡阶段。<br>如下图：</p>
 <p><img src="http://myqianlan.qiniudn.com/blog/2014/12/10event-standard.png" alt="event-standard"></p>
-<p>DOM2事件处理里添加事件使用的是addEventListener，它接收三个参数，第三个参数默认为false,表示在冒泡阶段调用事件处理程序。如果设为true，则表示在事件捕获阶段处理程序。<br>var btnDOM = document.getElementById(“btn”);</p>
-<p>btnDOM.addEventListener(“click”,function(){<br>    alert(“Click Me!”);<br>},false);<br>var ftn = function(){<br>    alert(“Click Me,too!”);<br>};<br>btnDOM.addEventListener(“click”,ftn,false);<br>删除事件使用removeEventListener，其中参数要和定义事件的参数一致，第三个参数不传，默认是删除冒泡事件，因为第三个参数不传默认都是false，例如下面的代码是不能成功删除事件的：</p>
-<p>btnDOM.addEventListener(“click”,ftn,true);<br>btnDOM.removeEventListener(“click”,ftn);</p>
+<p>DOM2事件处理里添加事件使用的是addEventListener，它接收三个参数，第三个参数默认为false,表示在冒泡阶段调用事件处理程序。如果设为true，则表示在事件捕获阶段处理程序。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btnDOM = <span class="built_in">document</span>.getElementById(<span class="string">"btn"</span>); </div><div class="line">btnDOM.addEventListener(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{ </div><div class="line">    alert(<span class="string">"Click Me!"</span>);</div><div class="line">},<span class="literal">false</span>);</div><div class="line"><span class="keyword">var</span> ftn = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{ </div><div class="line">    alert(<span class="string">"Click Me,too!"</span>);</div><div class="line">};</div><div class="line">btnDOM.addEventListener(<span class="string">"click"</span>,ftn,<span class="literal">false</span>);</div></pre></td></tr></table></figure>
+
+<p>删除事件使用removeEventListener，其中参数要和定义事件的参数一致，第三个参数不传，默认是删除冒泡事件，因为第三个参数不传默认都是false，例如下面的代码是不能成功删除事件的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">btnDOM.addEventListener(<span class="string">"click"</span>,ftn,<span class="literal">true</span>);</div><div class="line">btnDOM.removeEventListener(<span class="string">"click"</span>,ftn);</div></pre></td></tr></table></figure>
+
 <p>事件冒泡有时候并不是我们所想要的。所以我们需要来阻止事件冒泡，标准方法是：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">event.stopPropagation();</div></pre></td></tr></table></figure>
 
@@ -151,7 +154,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://myqianlan.com/2014/12/10/talk-about-javascript-event/" data-id="8llhnxsl8p35xz23" class="article-share-link" data-share="baidu">分享</a>
+        <a data-url="http://myqianlan.com/2014/12/10/talk-about-javascript-event/" data-id="ek0xeu1m2c9hq7t2" class="article-share-link" data-share="baidu">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/事件/">事件</a></li></ul>
