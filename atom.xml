@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-12-08T02:06:22.120Z</updated>
+  <updated>2014-12-10T04:04:57.483Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -13,6 +13,67 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[谈谈JavaScript事件]]></title>
+    <link href="http://myqianlan.com/2014/12/10/talk-about-javascript-event/"/>
+    <id>http://myqianlan.com/2014/12/10/talk-about-javascript-event/</id>
+    <published>2014-12-10T04:15:44.000Z</published>
+    <updated>2014-12-10T04:04:36.000Z</updated>
+    <content type="html"><![CDATA[<p>众所周知,web前端包含三个基本技术：html、css和javascript。三者融合，才让网页变得精彩纷呈！如今，web上的操作越来越趋于复杂，JavaScript事件在网页中也遍地开花，有时候也是遍地生Bug。真正理解了JavaScript的事件模型，才能在实际开发中佛挡杀佛，bug挡杀bug。<a id="more"></a></p>
+<h2 id="前言">前言</h2>
+<p>这是我自己对JavaScript事件模型的理解，并且参考了网络上的各家之言。由于本人才疏学浅，难免有错误之处，还望指正。<br>在工作学习中，你或许不知道见过多少事件了。那么，到底什么是JavaScript事件呢？我们先来运行一段代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> out = [];</div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i <span class="keyword">in</span> <span class="built_in">window</span>) {</div><div class="line">  <span class="keyword">if</span> ( <span class="regexp">/^on/</span>.test(i)) { out[out.length] = i; }</div><div class="line">}</div><div class="line"><span class="built_in">console</span>.log(out);</div></pre></td></tr></table></figure>
+
+<p>是不是看到了如下一大串东西(我是在chrome中运行的)？</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="string">"onautocompleteerror"</span>, <span class="string">"onautocomplete"</span>, <span class="string">"ondeviceorientation"</span>, <span class="string">"ondevicemotion"</span>, <span class="string">"onunload"</span>, <span class="string">"onstorage"</span>, <span class="string">"onpopstate"</span>, <span class="string">"onpageshow"</span>, <span class="string">"onpagehide"</span>, <span class="string">"ononline"</span>, <span class="string">"onoffline"</span>, <span class="string">"onmessage"</span>, <span class="string">"onlanguagechange"</span>, <span class="string">"onhashchange"</span>, <span class="string">"onbeforeunload"</span>, <span class="string">"onwaiting"</span>, <span class="string">"onvolumechange"</span>, <span class="string">"ontoggle"</span>, <span class="string">"ontimeupdate"</span>, <span class="string">"onsuspend"</span>, <span class="string">"onsubmit"</span>, <span class="string">"onstalled"</span>, <span class="string">"onshow"</span>, <span class="string">"onselect"</span>, <span class="string">"onseeking"</span>, <span class="string">"onseeked"</span>, <span class="string">"onscroll"</span>, <span class="string">"onresize"</span>, <span class="string">"onreset"</span>, <span class="string">"onratechange"</span>, <span class="string">"onprogress"</span>, <span class="string">"onplaying"</span>, <span class="string">"onplay"</span>, <span class="string">"onpause"</span>, <span class="string">"onmousewheel"</span>, <span class="string">"onmouseup"</span>, <span class="string">"onmouseover"</span>, <span class="string">"onmouseout"</span>, <span class="string">"onmousemove"</span>, <span class="string">"onmouseleave"</span>, <span class="string">"onmouseenter"</span>, <span class="string">"onmousedown"</span>, <span class="string">"onloadstart"</span>, <span class="string">"onloadedmetadata"</span>, <span class="string">"onloadeddata"</span>, <span class="string">"onload"</span>, <span class="string">"onkeyup"</span>, <span class="string">"onkeypress"</span>, <span class="string">"onkeydown"</span>, <span class="string">"oninvalid"</span>, <span class="string">"oninput"</span>, <span class="string">"onfocus"</span>, <span class="string">"onerror"</span>, <span class="string">"onended"</span>, <span class="string">"onemptied"</span>, <span class="string">"ondurationchange"</span>, <span class="string">"ondrop"</span>, <span class="string">"ondragstart"</span>, <span class="string">"ondragover"</span>, <span class="string">"ondragleave"</span>, <span class="string">"ondragenter"</span>, <span class="string">"ondragend"</span>, <span class="string">"ondrag"</span>, <span class="string">"ondblclick"</span>, <span class="string">"oncuechange"</span>, <span class="string">"oncontextmenu"</span>, <span class="string">"onclose"</span>, <span class="string">"onclick"</span>, <span class="string">"onchange"</span>, <span class="string">"oncanplaythrough"</span>, <span class="string">"oncanplay"</span>, <span class="string">"oncancel"</span>, <span class="string">"onblur"</span>, <span class="string">"onabort"</span>, <span class="string">"onwheel"</span>, <span class="string">"onwebkittransitionend"</span>, <span class="string">"onwebkitanimationstart"</span>, <span class="string">"onwebkitanimationiteration"</span>, <span class="string">"onwebkitanimationend"</span>, <span class="string">"ontransitionend"</span>, <span class="string">"onsearch"</span>]</div></pre></td></tr></table></figure>
+
+<p>没错，这些都是JavaScript事件！但也不仅仅是这些。</p>
+<h2 id="DOM1级事件处理">DOM1级事件处理</h2>
+<p>为什么不是DOM0级事件，以为DOM0级规范压根就没有形成。DOM1级事件处理是当今所有浏览器都支持的事件处理，不存在任何兼容性问题，。DOM0事件处理的规则：每个DOM元素都有自己的事件处理属性，该属性可以赋值一个函数，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btnDOM = <span class="built_in">document</span>.getElementById(<span class="string">"btn"</span>);</div><div class="line">btnDOM.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    alert(<span class="string">"you click me!"</span>);            </div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>DOM0级事件处理的事件属性都是采用“on+事件名称”的方式定义，整个属性都是小写字母。DOM元素在JavaScript代码是作为对象处理的，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">btnDOM.onclick = <span class="literal">null</span>；</div></pre></td></tr></table></figure>
+
+<p>那么按钮的点击事件被取消了。</p>
+<p>DOM1级事件可以被覆盖，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">btnDOM.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    alert(<span class="string">" you click me!"</span>);            </div><div class="line">}</div><div class="line">btnDOM.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    alert(<span class="string">"also click me!"</span>);            </div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>后面一个函数会将第一个函数覆盖。</p>
+<h2 id="DOM2级事件处理（IE9及其以上支持）">DOM2级事件处理（IE9及其以上支持）</h2>
+<p>首先说说事件流。事件流描述的是从页面中接收事件的顺序。早期的IE事件流叫做事件冒泡，Netscape团队提出的是事件捕获。<br>如下图：</p>
+<p>而现在常用的DOM2级事件流（也称标准事件模型）是包括了三个阶段：事件捕获阶段，处于目标阶段和事件冒泡阶段。<br>如下图：</p>
+<p>DOM2事件处理里添加事件使用的是addEventListener，它接收三个参数，第三个参数默认为false,表示在冒泡阶段调用事件处理程序。如果设为true，则表示在事件捕获阶段处理程序。<br>var btnDOM = document.getElementById(“btn”);</p>
+<p>btnDOM.addEventListener(“click”,function(){<br>    alert(“Click Me!”);<br>},false);<br>var ftn = function(){<br>    alert(“Click Me,too!”);<br>};<br>btnDOM.addEventListener(“click”,ftn,false);<br>删除事件使用removeEventListener，其中参数要和定义事件的参数一致，第三个参数不传，默认是删除冒泡事件，因为第三个参数不传默认都是false，例如下面的代码是不能成功删除事件的：</p>
+<p>btnDOM.addEventListener(“click”,ftn,true);<br>btnDOM.removeEventListener(“click”,ftn);</p>
+<p>事件冒泡有时候并不是我们所想要的。所以我们需要来阻止事件冒泡，标准方法是：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">event.stopPropagation();</div></pre></td></tr></table></figure>
+
+<p>IE 可能会使用到下面这个方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">event.cancelBubble = <span class="literal">true</span>;</div></pre></td></tr></table></figure>
+
+<p>事件对象event里面存在target和currentTarget。我们知道事件其实是观察者模式。target其实是事件的发布者（event dispatcher），currentTarget是事件的处理者（event processor）。</p>
+<blockquote>
+<p>说明：</p>
+<ol>
+<li>target发生在事件流的目标阶段，而currentTarget发生在事件流的整个阶段（捕获、目标和冒泡阶段）</li>
+<li>只有当事件流处于目标阶段的时候二者才相同</li>
+<li>而当事件流处于捕获和冒泡阶段时，target指向被点击的对象，而currentTarget指向当前事件活动的对象。</li>
+</ol>
+</blockquote>
+<p>知道了这个原理，我们便可以理解事件委托（也称事件代理）的实现原理了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>众所周知,web前端包含三个基本技术：html、css和javascript。三者融合，才让网页变得精彩纷呈！如今，web上的操作越来越趋于复杂，JavaScript事件在网页中也遍地开花，有时候也是遍地生Bug。真正理解了JavaScript的事件模型，才能在实际开发中佛挡杀佛，bug挡杀bug。]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://myqianlan.com/tags/javascript/"/>
+    
+      <category term="事件" scheme="http://myqianlan.com/tags/%E4%BA%8B%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[也说border-box盒模型]]></title>
