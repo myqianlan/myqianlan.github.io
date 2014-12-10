@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-12-10T04:04:57.483Z</updated>
+  <updated>2014-12-10T04:13:23.670Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://myqianlan.com/2014/12/10/talk-about-javascript-event/"/>
     <id>http://myqianlan.com/2014/12/10/talk-about-javascript-event/</id>
     <published>2014-12-10T04:15:44.000Z</published>
-    <updated>2014-12-10T04:04:36.000Z</updated>
+    <updated>2014-12-10T04:12:55.000Z</updated>
     <content type="html"><![CDATA[<p>众所周知,web前端包含三个基本技术：html、css和javascript。三者融合，才让网页变得精彩纷呈！如今，web上的操作越来越趋于复杂，JavaScript事件在网页中也遍地开花，有时候也是遍地生Bug。真正理解了JavaScript的事件模型，才能在实际开发中佛挡杀佛，bug挡杀bug。<a id="more"></a></p>
 <h2 id="前言">前言</h2>
 <p>这是我自己对JavaScript事件模型的理解，并且参考了网络上的各家之言。由于本人才疏学浅，难免有错误之处，还望指正。<br>在工作学习中，你或许不知道见过多少事件了。那么，到底什么是JavaScript事件呢？我们先来运行一段代码：</p>
@@ -43,7 +43,9 @@
 <p>后面一个函数会将第一个函数覆盖。</p>
 <h2 id="DOM2级事件处理（IE9及其以上支持）">DOM2级事件处理（IE9及其以上支持）</h2>
 <p>首先说说事件流。事件流描述的是从页面中接收事件的顺序。早期的IE事件流叫做事件冒泡，Netscape团队提出的是事件捕获。<br>如下图：</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/12/10event-old.png" alt="event-old"></p>
 <p>而现在常用的DOM2级事件流（也称标准事件模型）是包括了三个阶段：事件捕获阶段，处于目标阶段和事件冒泡阶段。<br>如下图：</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/12/10event-standard.png" alt="event-standard"></p>
 <p>DOM2事件处理里添加事件使用的是addEventListener，它接收三个参数，第三个参数默认为false,表示在冒泡阶段调用事件处理程序。如果设为true，则表示在事件捕获阶段处理程序。<br>var btnDOM = document.getElementById(“btn”);</p>
 <p>btnDOM.addEventListener(“click”,function(){<br>    alert(“Click Me!”);<br>},false);<br>var ftn = function(){<br>    alert(“Click Me,too!”);<br>};<br>btnDOM.addEventListener(“click”,ftn,false);<br>删除事件使用removeEventListener，其中参数要和定义事件的参数一致，第三个参数不传，默认是删除冒泡事件，因为第三个参数不传默认都是false，例如下面的代码是不能成功删除事件的：</p>
 <p>btnDOM.addEventListener(“click”,ftn,true);<br>btnDOM.removeEventListener(“click”,ftn);</p>
@@ -63,6 +65,8 @@
 </ol>
 </blockquote>
 <p>知道了这个原理，我们便可以理解事件委托（也称事件代理）的实现原理了。</p>
+<h2 id="DOM3及DOM4事件处理">DOM3及DOM4事件处理</h2>
+<p>这是未来的事情了。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>众所周知,web前端包含三个基本技术：html、css和javascript。三者融合，才让网页变得精彩纷呈！如今，web上的操作越来越趋于复杂，JavaScript事件在网页中也遍地开花，有时候也是遍地生Bug。真正理解了JavaScript的事件模型，才能在实际开发中佛挡杀佛，bug挡杀bug。]]>
