@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-12-16T00:24:08.899Z</updated>
+  <updated>2014-12-18T07:01:59.257Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -13,6 +13,41 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ajax开发模拟后端数据接口]]></title>
+    <link href="http://myqianlan.com/2014/12/18/simple-way-to-mock-ajax-data-use-mockjax-and-mockjson/"/>
+    <id>http://myqianlan.com/2014/12/18/simple-way-to-mock-ajax-data-use-mockjax-and-mockjson/</id>
+    <published>2014-12-18T06:19:13.000Z</published>
+    <updated>2014-12-18T07:00:54.000Z</updated>
+    <content type="html"><![CDATA[<p>在做前端开发的时候，特别是一些业务逻辑集中在前端的开发中。我们经常需要自己来模拟获取到后台接口的数据。为什么要模拟？可能后台接口还没有开发完成，可能后台还没有数据返回，可能。。。等等原因。曾经，我也尝试过自己使用nodejs来自己写需要模拟后台接口，但因为种种原因，最后都不了了之，或许是因为太复杂，在开发的时候显得不够人性化。偶然之间，一个转身，我发现了mockjax和mockJSON。<a id="more"></a></p>
+<h2 id="mockjax和mockjson">mockjax和mockjson</h2>
+<p>mockjax主要是可以针对指定的网址进行mock，当Ajax请求网址时进行拦截并回传假的数据。OK，我要的就是这种功能！<br>mockJSON则有点像是JSON的数据自动生成中心，可以根据我们指定的格式随机生成回传的JSON数据，在需要大量数据时比较有用。<br>贴上这俩在github的地址，有兴趣的自行围观！</p>
+<p><a href="https://github.com/jakerella/jquery-mockjax" target="_blank" rel="external">mockjax</a></p>
+<p><a href="https://github.com/mennovanslooten/mockJSON" target="_blank" rel="external">mockjson</a></p>
+<p>另外，这两个都是基于jquery开发的插件，所以针对jquery开发流派还是比较有用！</p>
+<h2 id="示例">示例</h2>
+<p>首先，当然还是引入。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"vendor/jquery.1.11.1.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"vendor/jquery.mockjax.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"vendor/jquery.mockjson.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>然后我们写一个ajax请求</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    $.ajax({</div><div class="line">        url: <span class="string">'/WebApi/test.html'</span>,</div><div class="line">        type: <span class="string">'GET'</span>,</div><div class="line">        error: <span class="function"><span class="keyword">function</span><span class="params">(xhr)</span> </span>{</div><div class="line">            alert(<span class="string">'请求失败'</span>);</div><div class="line">        },</div><div class="line">        success: <span class="function"><span class="keyword">function</span><span class="params">(res)</span> </span>{</div><div class="line">            alert(res);</div><div class="line">        }</div><div class="line">    });</div><div class="line">});</div></pre></td></tr></table></figure>
+
+<p>由于url不存在，请求失败。然后我们来使用mockjax！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> isAjaxMocked = <span class="literal">true</span>;</div><div class="line"><span class="keyword">if</span> (isAjaxMocked) {</div><div class="line">    $.mockjax({</div><div class="line">        url: <span class="string">'/WebApi/test.html'</span>,</div><div class="line">        status: <span class="number">200</span>,</div><div class="line">        responseTime: <span class="number">900</span>,</div><div class="line">        responseText: {<span class="string">'info'</span>: <span class="string">'hello world'</span>, <span class="string">'status'</span>: <span class="string">'success'</span>}</div><div class="line">    });</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>ok,mock  ajax请求成功。而且我们通过设置开关，可以很轻易的在模拟和真实的之间切换。<br>当需要批量模拟数据时，我们可以使用mockJSON，在这里我就不详细介绍了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在做前端开发的时候，特别是一些业务逻辑集中在前端的开发中。我们经常需要自己来模拟获取到后台接口的数据。为什么要模拟？可能后台接口还没有开发完成，可能后台还没有数据返回，可能。。。等等原因。曾经，我也尝试过自己使用nodejs来自己写需要模拟后台接口，但因为种种原因，最后都不了了之，或许是因为太复杂，在开发的时候显得不够人性化。偶然之间，一个转身，我发现了mockjax和mockJSON。]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://myqianlan.com/tags/javascript/"/>
+    
+      <category term="jquery" scheme="http://myqianlan.com/tags/jquery/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[谈谈JavaScript事件]]></title>
