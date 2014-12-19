@@ -4,7 +4,7 @@
   <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://myqianlan.com/"/>
-  <updated>2014-12-18T07:01:59.257Z</updated>
+  <updated>2014-12-19T00:56:57.468Z</updated>
   <id>http://myqianlan.com/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[IE9+浏览器input文本框/密码框后面的小叉子/小眼睛清除]]></title>
+    <link href="http://myqianlan.com/2014/12/19/ie9-input-style-reset/"/>
+    <id>http://myqianlan.com/2014/12/19/ie9-input-style-reset/</id>
+    <published>2014-12-19T00:51:09.000Z</published>
+    <updated>2014-12-19T00:56:52.000Z</updated>
+    <content type="html"><![CDATA[<p>为了方便我们的触控操作，IE高等浏览器针对input及input type=”password”分别提供了快速清除钮（X图标）以及密码文字显示钮（小眼睛图标）的功能。<a id="more"></a><br>由于这经常跟设计不一致，所以需要我们来清除这些默认样式。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">input</span><span class="pseudo">::-ms-clear</span><span class="rules">{<span class="rule"><span class="attribute">display</span>:<span class="value">none</span></span>;<span class="rule">}</span></span><span class="comment">/*隐蔽文本框叉子*/</span></div><div class="line"><span class="tag">input</span><span class="pseudo">::-ms-reveal</span><span class="rules">{<span class="rule"><span class="attribute">display</span>:<span class="value">none</span></span>;<span class="rule">}</span></span><span class="comment">/*隐蔽暗码框小眼睛*/</span></div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>为了方便我们的触控操作，IE高等浏览器针对input及input type=”password”分别提供了快速清除钮（X图标）以及密码文字显示钮（小眼睛图标）的功能。]]>
+    
+    </summary>
+    
+      <category term="css" scheme="http://myqianlan.com/tags/css/"/>
+    
+      <category term="教程" scheme="http://myqianlan.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[ajax开发模拟后端数据接口]]></title>
