@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[myqianlan]]></title>
+  <subtitle><![CDATA[走走停停    不忘初心]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://myqianlan.com/"/>
+  <updated>2014-12-31T08:56:50.262Z</updated>
+  <id>http://myqianlan.com/</id>
+  
+  <author>
+    <name><![CDATA[myqianlan]]></name>
+    <email><![CDATA[linquantan@gmail.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[【转载】别把自己推到了墙角]]></title>
+    <link href="http://myqianlan.com/2014/12/23/no-way/"/>
+    <id>http://myqianlan.com/2014/12/23/no-way/</id>
+    <published>2014-12-23T03:27:20.000Z</published>
+    <updated>2014-12-23T03:30:26.000Z</updated>
+    <content type="html"><![CDATA[<p>转自：<a href="http://www.asheep.cn/life/no-way.html" target="_blank" rel="external">一只羊博客 » 别把自己推到了墙角</a></p>
+<p>好久没更新博客了，最近一直有加班，包括周末，实在太忙，上个月买的书，现在还在床头，没翻几页。就这么瞎忙，也没了思路。还能写什么呢？写点个人感悟？我他妈越来越觉得自己傻逼，就我那点思想感悟，就别显眼了。写点技术，发点教程？我就是一个菜鸟，让我带你入门行，要是往高深了整，我是瞎子。我每天还在向别人请教诸多技术问题呢。<a id="more"></a></p>
+<p>我自认为我是个性格很倔的孩子，小时候就这样。现在还是。所以，别看我诺诺的外表，也有刚毅的性格。我高中开始住校，在老家的一个小县城读书，离开家的时候妈妈哭了，爸爸送我带学校，安顿好了，爸爸走了，我哭了，虽然刚毅，但也不缺柔情。第一次离开家的感觉，好凄凉，虽然一个寝室很多人。</p>
+<p>大学到了武汉，离家更远了，但我没有了那种感觉。我觉得是希望。高中总盼着每个月一次的回家。现在我总想着去更远的地方。这就是：儿大不由爷，女大不中留。每次回家，两三天我就想着赶紧出去。有本书这样写：家乡你已经回不去了，而城市你还融入不了。其实在哪并不重要，只要心中有目标，有自己的理想，在哪都可以。如果没了目标，人在哪，有没有钱都会迷茫，就算换地方，也只是为了逃避。</p>
+<p>仔细想想，真是这么回事，很多时候，我们只要为一个目标努力，然后努力完成它，就算最后没有实现理想，过的也不会太差。有这么一个故事：有个小伙伴，打小身体素质不行，体育课，同学们都不喜欢跟他一起玩，因为谁要是跟他一起，谁就输。小伙伴一度很沮丧。后来小伙伴喜欢上了阅读，图书馆的老师告诉他，其实阅读不光能得到知识，更能得到乐趣。就这样小伙伴找到了属于自己的快乐方式，找到了体育以外的目标。</p>
+<p>很多的时候，是我们自己把自己推到了死角的。可能我们一转身就会发现广阔的天地。当你面对着墙角站着的时候，你总说地方小，憋得慌。那你转身啊，你转过来面对的是整个院子。</p>
+<p>记得有一次看电影的时候，台词里说“能爱的时候要懂得珍惜，无法爱的时候学会放手”。就像杨绛说的：人的尊卑，不靠地位，不由出身，只看你自己的成就。我们不妨加一句“是什么料，充什么用。”假如是一个萝卜，就力求做个水多肉脆的好萝卜；假如是棵白菜，就应力求做一棵滋滋实实的包心好白菜。不要苛求做谁的第二，只做最好的自己。</p>
+<p>离开家乡，闯自己的世界，很难。在一个陌生的城市立足，不易。但当我忙的连基本的阅读时间都没，当我忙的连个学习提高技术的时间都没了，当我忙的连个整理自己思路的时间都没了的时候，我是该想想：是不是我把自己推到了院落的墙角呢？</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>转自：<a href="http://www.asheep.cn/life/no-way.html" target="_blank" rel="external">一只羊博客 » 别把自己推到了墙角</a></p>
+<p>好久没更新博客了，最近一直有加班，包括周末，实在太忙，上个月买的书，现在还在床头，没翻几页。就这么瞎忙，也没了思路。还能写什么呢？写点个人感悟？我他妈越来越觉得自己傻逼，就我那点思想感悟，就别显眼了。写点技术，发点教程？我就是一个菜鸟，让我带你入门行，要是往高深了整，我是瞎子。我每天还在向别人请教诸多技术问题呢。]]>
+    
+    </summary>
+    
+      <category term="转载" scheme="http://myqianlan.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[IE9+浏览器input文本框/密码框后面的小叉子/小眼睛清除]]></title>
+    <link href="http://myqianlan.com/2014/12/19/ie9-input-style-reset/"/>
+    <id>http://myqianlan.com/2014/12/19/ie9-input-style-reset/</id>
+    <published>2014-12-19T00:51:09.000Z</published>
+    <updated>2014-12-19T00:56:52.000Z</updated>
+    <content type="html"><![CDATA[<p>为了方便我们的触控操作，IE高等浏览器针对input及input type=”password”分别提供了快速清除钮（X图标）以及密码文字显示钮（小眼睛图标）的功能。<a id="more"></a><br>由于这经常跟设计不一致，所以需要我们来清除这些默认样式。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">input</span><span class="pseudo">::-ms-clear</span><span class="rules">{<span class="rule"><span class="attribute">display</span>:<span class="value">none</span></span>;<span class="rule">}</span></span><span class="comment">/*隐蔽文本框叉子*/</span></div><div class="line"><span class="tag">input</span><span class="pseudo">::-ms-reveal</span><span class="rules">{<span class="rule"><span class="attribute">display</span>:<span class="value">none</span></span>;<span class="rule">}</span></span><span class="comment">/*隐蔽暗码框小眼睛*/</span></div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>为了方便我们的触控操作，IE高等浏览器针对input及input type=”password”分别提供了快速清除钮（X图标）以及密码文字显示钮（小眼睛图标）的功能。]]>
+    
+    </summary>
+    
+      <category term="css" scheme="http://myqianlan.com/tags/css/"/>
+    
+      <category term="教程" scheme="http://myqianlan.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ajax开发模拟后端数据接口]]></title>
+    <link href="http://myqianlan.com/2014/12/18/simple-way-to-mock-ajax-data-use-mockjax-and-mockjson/"/>
+    <id>http://myqianlan.com/2014/12/18/simple-way-to-mock-ajax-data-use-mockjax-and-mockjson/</id>
+    <published>2014-12-18T06:19:13.000Z</published>
+    <updated>2014-12-18T07:00:54.000Z</updated>
+    <content type="html"><![CDATA[<p>在做前端开发的时候，特别是一些业务逻辑集中在前端的开发中。我们经常需要自己来模拟获取到后台接口的数据。为什么要模拟？可能后台接口还没有开发完成，可能后台还没有数据返回，可能。。。等等原因。曾经，我也尝试过自己使用nodejs来自己写需要模拟后台接口，但因为种种原因，最后都不了了之，或许是因为太复杂，在开发的时候显得不够人性化。偶然之间，一个转身，我发现了mockjax和mockJSON。<a id="more"></a></p>
+<h2 id="mockjax和mockjson">mockjax和mockjson</h2>
+<p>mockjax主要是可以针对指定的网址进行mock，当Ajax请求网址时进行拦截并回传假的数据。OK，我要的就是这种功能！<br>mockJSON则有点像是JSON的数据自动生成中心，可以根据我们指定的格式随机生成回传的JSON数据，在需要大量数据时比较有用。<br>贴上这俩在github的地址，有兴趣的自行围观！</p>
+<p><a href="https://github.com/jakerella/jquery-mockjax" target="_blank" rel="external">mockjax</a></p>
+<p><a href="https://github.com/mennovanslooten/mockJSON" target="_blank" rel="external">mockjson</a></p>
+<p>另外，这两个都是基于jquery开发的插件，所以针对jquery开发流派还是比较有用！</p>
+<h2 id="示例">示例</h2>
+<p>首先，当然还是引入。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"vendor/jquery.1.11.1.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"vendor/jquery.mockjax.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"vendor/jquery.mockjson.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>然后我们写一个ajax请求</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    $.ajax({</div><div class="line">        url: <span class="string">'/WebApi/test.html'</span>,</div><div class="line">        type: <span class="string">'GET'</span>,</div><div class="line">        error: <span class="function"><span class="keyword">function</span><span class="params">(xhr)</span> </span>{</div><div class="line">            alert(<span class="string">'请求失败'</span>);</div><div class="line">        },</div><div class="line">        success: <span class="function"><span class="keyword">function</span><span class="params">(res)</span> </span>{</div><div class="line">            alert(res);</div><div class="line">        }</div><div class="line">    });</div><div class="line">});</div></pre></td></tr></table></figure>
+
+<p>由于url不存在，请求失败。然后我们来使用mockjax！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> isAjaxMocked = <span class="literal">true</span>;</div><div class="line"><span class="keyword">if</span> (isAjaxMocked) {</div><div class="line">    $.mockjax({</div><div class="line">        url: <span class="string">'/WebApi/test.html'</span>,</div><div class="line">        status: <span class="number">200</span>,</div><div class="line">        responseTime: <span class="number">900</span>,</div><div class="line">        responseText: {<span class="string">'info'</span>: <span class="string">'hello world'</span>, <span class="string">'status'</span>: <span class="string">'success'</span>}</div><div class="line">    });</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>ok,mock  ajax请求成功。而且我们通过设置开关，可以很轻易的在模拟和真实的之间切换。<br>当需要批量模拟数据时，我们可以使用mockJSON，在这里我就不详细介绍了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在做前端开发的时候，特别是一些业务逻辑集中在前端的开发中。我们经常需要自己来模拟获取到后台接口的数据。为什么要模拟？可能后台接口还没有开发完成，可能后台还没有数据返回，可能。。。等等原因。曾经，我也尝试过自己使用nodejs来自己写需要模拟后台接口，但因为种种原因，最后都不了了之，或许是因为太复杂，在开发的时候显得不够人性化。偶然之间，一个转身，我发现了mockjax和mockJSON。]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://myqianlan.com/tags/javascript/"/>
+    
+      <category term="jquery" scheme="http://myqianlan.com/tags/jquery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[谈谈JavaScript事件]]></title>
+    <link href="http://myqianlan.com/2014/12/10/talk-about-javascript-event/"/>
+    <id>http://myqianlan.com/2014/12/10/talk-about-javascript-event/</id>
+    <published>2014-12-10T04:15:44.000Z</published>
+    <updated>2014-12-10T04:16:29.000Z</updated>
+    <content type="html"><![CDATA[<p>众所周知,web前端包含三个基本技术：html、css和javascript。三者融合，才让网页变得精彩纷呈！如今，web上的操作越来越趋于复杂，JavaScript事件在网页中也遍地开花，有时候也是遍地生Bug。真正理解了JavaScript的事件模型，才能在实际开发中佛挡杀佛，bug挡杀bug。<a id="more"></a></p>
+<h2 id="前言">前言</h2>
+<p>这是我自己对JavaScript事件模型的理解，并且参考了网络上的各家之言。由于本人才疏学浅，难免有错误之处，还望指正。<br>在工作学习中，你或许不知道见过多少事件了。那么，到底什么是JavaScript事件呢？我们先来运行一段代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> out = [];</div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i <span class="keyword">in</span> <span class="built_in">window</span>) {</div><div class="line">  <span class="keyword">if</span> ( <span class="regexp">/^on/</span>.test(i)) { out[out.length] = i; }</div><div class="line">}</div><div class="line"><span class="built_in">console</span>.log(out);</div></pre></td></tr></table></figure>
+
+<p>是不是看到了如下一大串东西(我是在chrome中运行的)？</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="string">"onautocompleteerror"</span>, <span class="string">"onautocomplete"</span>, <span class="string">"ondeviceorientation"</span>, <span class="string">"ondevicemotion"</span>, <span class="string">"onunload"</span>, <span class="string">"onstorage"</span>, <span class="string">"onpopstate"</span>, <span class="string">"onpageshow"</span>, <span class="string">"onpagehide"</span>, <span class="string">"ononline"</span>, <span class="string">"onoffline"</span>, <span class="string">"onmessage"</span>, <span class="string">"onlanguagechange"</span>, <span class="string">"onhashchange"</span>, <span class="string">"onbeforeunload"</span>, <span class="string">"onwaiting"</span>, <span class="string">"onvolumechange"</span>, <span class="string">"ontoggle"</span>, <span class="string">"ontimeupdate"</span>, <span class="string">"onsuspend"</span>, <span class="string">"onsubmit"</span>, <span class="string">"onstalled"</span>, <span class="string">"onshow"</span>, <span class="string">"onselect"</span>, <span class="string">"onseeking"</span>, <span class="string">"onseeked"</span>, <span class="string">"onscroll"</span>, <span class="string">"onresize"</span>, <span class="string">"onreset"</span>, <span class="string">"onratechange"</span>, <span class="string">"onprogress"</span>, <span class="string">"onplaying"</span>, <span class="string">"onplay"</span>, <span class="string">"onpause"</span>, <span class="string">"onmousewheel"</span>, <span class="string">"onmouseup"</span>, <span class="string">"onmouseover"</span>, <span class="string">"onmouseout"</span>, <span class="string">"onmousemove"</span>, <span class="string">"onmouseleave"</span>, <span class="string">"onmouseenter"</span>, <span class="string">"onmousedown"</span>, <span class="string">"onloadstart"</span>, <span class="string">"onloadedmetadata"</span>, <span class="string">"onloadeddata"</span>, <span class="string">"onload"</span>, <span class="string">"onkeyup"</span>, <span class="string">"onkeypress"</span>, <span class="string">"onkeydown"</span>, <span class="string">"oninvalid"</span>, <span class="string">"oninput"</span>, <span class="string">"onfocus"</span>, <span class="string">"onerror"</span>, <span class="string">"onended"</span>, <span class="string">"onemptied"</span>, <span class="string">"ondurationchange"</span>, <span class="string">"ondrop"</span>, <span class="string">"ondragstart"</span>, <span class="string">"ondragover"</span>, <span class="string">"ondragleave"</span>, <span class="string">"ondragenter"</span>, <span class="string">"ondragend"</span>, <span class="string">"ondrag"</span>, <span class="string">"ondblclick"</span>, <span class="string">"oncuechange"</span>, <span class="string">"oncontextmenu"</span>, <span class="string">"onclose"</span>, <span class="string">"onclick"</span>, <span class="string">"onchange"</span>, <span class="string">"oncanplaythrough"</span>, <span class="string">"oncanplay"</span>, <span class="string">"oncancel"</span>, <span class="string">"onblur"</span>, <span class="string">"onabort"</span>, <span class="string">"onwheel"</span>, <span class="string">"onwebkittransitionend"</span>, <span class="string">"onwebkitanimationstart"</span>, <span class="string">"onwebkitanimationiteration"</span>, <span class="string">"onwebkitanimationend"</span>, <span class="string">"ontransitionend"</span>, <span class="string">"onsearch"</span>]</div></pre></td></tr></table></figure>
+
+<p>没错，这些都是JavaScript事件！但也不仅仅是这些。</p>
+<h2 id="DOM1级事件处理">DOM1级事件处理</h2>
+<p>为什么不是DOM0级事件，以为DOM0级规范压根就没有形成。DOM1级事件处理是当今所有浏览器都支持的事件处理，不存在任何兼容性问题，。DOM0事件处理的规则：每个DOM元素都有自己的事件处理属性，该属性可以赋值一个函数，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btnDOM = <span class="built_in">document</span>.getElementById(<span class="string">"btn"</span>);</div><div class="line">btnDOM.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    alert(<span class="string">"you click me!"</span>);            </div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>DOM0级事件处理的事件属性都是采用“on+事件名称”的方式定义，整个属性都是小写字母。DOM元素在JavaScript代码是作为对象处理的，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">btnDOM.onclick = <span class="literal">null</span>；</div></pre></td></tr></table></figure>
+
+<p>那么按钮的点击事件被取消了。</p>
+<p>DOM1级事件可以被覆盖，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">btnDOM.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    alert(<span class="string">" you click me!"</span>);            </div><div class="line">}</div><div class="line">btnDOM.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    alert(<span class="string">"also click me!"</span>);            </div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>后面一个函数会将第一个函数覆盖。</p>
+<h2 id="DOM2级事件处理（IE9及其以上支持）">DOM2级事件处理（IE9及其以上支持）</h2>
+<p>首先说说事件流。事件流描述的是从页面中接收事件的顺序。早期的IE事件流叫做事件冒泡，Netscape团队提出的是事件捕获。<br>如下图：</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/12/10event-old.png" alt="event-old"></p>
+<p>而现在常用的DOM2级事件流（也称标准事件模型）是包括了三个阶段：事件捕获阶段，处于目标阶段和事件冒泡阶段。<br>如下图：</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/12/10event-standard.png" alt="event-standard"></p>
+<p>DOM2事件处理里添加事件使用的是addEventListener，它接收三个参数，第三个参数默认为false,表示在冒泡阶段调用事件处理程序。如果设为true，则表示在事件捕获阶段处理程序。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> btnDOM = <span class="built_in">document</span>.getElementById(<span class="string">"btn"</span>); </div><div class="line">btnDOM.addEventListener(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{ </div><div class="line">    alert(<span class="string">"Click Me!"</span>);</div><div class="line">},<span class="literal">false</span>);</div><div class="line"><span class="keyword">var</span> ftn = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{ </div><div class="line">    alert(<span class="string">"Click Me,too!"</span>);</div><div class="line">};</div><div class="line">btnDOM.addEventListener(<span class="string">"click"</span>,ftn,<span class="literal">false</span>);</div></pre></td></tr></table></figure>
+
+<p>删除事件使用removeEventListener，其中参数要和定义事件的参数一致，第三个参数不传，默认是删除冒泡事件，因为第三个参数不传默认都是false，例如下面的代码是不能成功删除事件的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">btnDOM.addEventListener(<span class="string">"click"</span>,ftn,<span class="literal">true</span>);</div><div class="line">btnDOM.removeEventListener(<span class="string">"click"</span>,ftn);</div></pre></td></tr></table></figure>
+
+<p>事件冒泡有时候并不是我们所想要的。所以我们需要来阻止事件冒泡，标准方法是：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">event.stopPropagation();</div></pre></td></tr></table></figure>
+
+<p>IE 可能会使用到下面这个方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">event.cancelBubble = <span class="literal">true</span>;</div></pre></td></tr></table></figure>
+
+<p>事件对象event里面存在target和currentTarget。我们知道事件其实是观察者模式。target其实是事件的发布者（event dispatcher），currentTarget是事件的处理者（event processor）。</p>
+<blockquote>
+<p>说明：</p>
+<ol>
+<li>target发生在事件流的目标阶段，而currentTarget发生在事件流的整个阶段（捕获、目标和冒泡阶段）</li>
+<li>只有当事件流处于目标阶段的时候二者才相同</li>
+<li>而当事件流处于捕获和冒泡阶段时，target指向被点击的对象，而currentTarget指向当前事件活动的对象。</li>
+</ol>
+</blockquote>
+<p>知道了这个原理，我们便可以理解事件委托（也称事件代理）的实现原理了。</p>
+<h2 id="DOM3及DOM4事件处理">DOM3及DOM4事件处理</h2>
+<p>这是未来的事情了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>众所周知,web前端包含三个基本技术：html、css和javascript。三者融合，才让网页变得精彩纷呈！如今，web上的操作越来越趋于复杂，JavaScript事件在网页中也遍地开花，有时候也是遍地生Bug。真正理解了JavaScript的事件模型，才能在实际开发中佛挡杀佛，bug挡杀bug。]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://myqianlan.com/tags/javascript/"/>
+    
+      <category term="事件" scheme="http://myqianlan.com/tags/%E4%BA%8B%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[也说border-box盒模型]]></title>
+    <link href="http://myqianlan.com/2014/12/08/talk-about-border-box/"/>
+    <id>http://myqianlan.com/2014/12/08/talk-about-border-box/</id>
+    <published>2014-12-08T00:50:45.000Z</published>
+    <updated>2014-12-08T02:05:58.000Z</updated>
+    <content type="html"><![CDATA[<p>border-box是css3的一个新属性，使用这个属性，和以往的content-box比起来，会有诸多便利之处，bootstrap3也使用的是这个border-box，甚至很多人认为，border-box才是我们真正所需要的盒模型。或许，这也是W3C为何加入这个属性的原因之一吧。<a id="more"></a></p>
+<h2 id="介绍">介绍</h2>
+<p>border-box与content-box有什么不同？我们先来demo一下，一探究竟。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="id">#box1</span><span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">150px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">4px</span> dashed orange</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> gray</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> <span class="number">20px</span></span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#box2</span><span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> content-box</span></span>;<span class="comment">/*其实也可以不写这句，因为默认为content-box*/</span></div><div class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">150px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">4px</span> dashed orange</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> gray</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>ok.来看一下效果：<br><img src="http://myqianlan.qiniudn.com/blog/2014/12/08/box-sizing-demo.png" alt="demo"><br>嗯，这就是border-box;<a href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank" rel="external">w3schools</a>中对这个属性的描述：<br><img src="http://myqianlan.qiniudn.com/blog/2014/12/08/box-sizing.png" alt="box-sizing"><br>使用这个属性，再也不会因为修改border和padding而使修改布局大动干戈了。</p>
+<h2 id="最佳化实践">最佳化实践</h2>
+<p>接下来就是如何在项目中使用这个属性了。借用一篇博客，<a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/" target="_blank" rel="external">http://www.paulirish.com/2012/box-sizing-border-box-ftw/</a><br>这篇博客中描述了如何更好的使用这个属性。在此之前，我都是这样用的：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*更改盒模型为border-box*/</span></div><div class="line">*, *<span class="pseudo">:before</span>, *<span class="pseudo">:after</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">-webkit-box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">-moz-box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>嗯，或许你也是这样用的。<em> 选择器效率也不错，只要你不这样使用 .foo &gt; </em> 。看了这篇文章过后我才发现，特么的原来我这样使用是有问题的。因为我强制全局所有的使用这个规范，这导致对组件十分不友好！</p>
+<p>看看前辈是如何使用：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* apply a natural box layout model to all elements, but allowing components to change */</span></div><div class="line"><span class="tag">html</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line">*, *<span class="pseudo">:before</span>, *<span class="pseudo">:after</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> inherit</span></span>;</div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>不错，使用了继承！而且没有使用浏览器前缀！因为现代浏览器，IE8+都是支持这个属性的。在不需要做兼容时，去掉前缀吧。给出一张兼容性的图片，也可以直接访问<a href="http://html5please.com/#box-sizing" target="_blank" rel="external">html5please.com</a>：<br><img src="http://myqianlan.qiniudn.com/blog/2014/12/08/box-sizing-support.png" alt="support"><br>IE67我们使用那个.htc文件，最好使用IE条件注释来引入，毕竟15k的大小呢（不建议让无辜的现代浏览器用户来为这15k买单）。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">&lt;!--[if lte IE7]&gt;  </span></div><div class="line">    &lt;link rel="stylesheet" href="css/ie--box-border.css"&gt;  </div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">* <span class="rules">{  </span></div><div class="line">     <span class="rule"><span class="attribute">behavior</span>:<span class="value"> <span class="function">url</span>(css/boxsizing.htc)</span></span>;  </div><div class="line"><span class="rule">}</span></div></pre></td></tr></table></figure>
+
+<p>嗯，就这样，兼容IE6+了，就算在中国这么严峻的形势下，也可happy的使用了。</p>
+<h2 id="反思">反思</h2>
+<p>不假思索，不加思考的就这样用了border-box真的好么？border-box不会破坏本层级的布局，但是当我们改变一个盒子的表现时，我们会发现，所有的嵌套元素发生了一些改变，尽管我们并没有对嵌套元素做什么。这样，可能又会引入一些新的不可预知的问题，或许这些问题会导致布局比以往变得更加复杂！</p>
+<p>到底该使用哪个？君请随意，适合自己的永远是最好的！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>border-box是css3的一个新属性，使用这个属性，和以往的content-box比起来，会有诸多便利之处，bootstrap3也使用的是这个border-box，甚至很多人认为，border-box才是我们真正所需要的盒模型。或许，这也是W3C为何加入这个属性的原因之一吧。]]>
+    
+    </summary>
+    
+      <category term="布局" scheme="http://myqianlan.com/tags/%E5%B8%83%E5%B1%80/"/>
+    
+      <category term="兼容" scheme="http://myqianlan.com/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[前端开发中的一些chrome插件推荐]]></title>
+    <link href="http://myqianlan.com/2014/12/03/frontend-usefull-chrome-plugins/"/>
+    <id>http://myqianlan.com/2014/12/03/frontend-usefull-chrome-plugins/</id>
+    <published>2014-12-03T05:22:52.000Z</published>
+    <updated>2014-12-04T00:24:12.000Z</updated>
+    <content type="html"><![CDATA[<p>这篇博客推荐的都是谷歌chrome浏览器插件，理论上，与之相同内核的浏览器都能使用。由于是谷歌插件，所以在天朝的网络，你懂的！<a id="more"></a></p>
+<h2 id="红杏"><a href="http://honx.in/i/U84lHoIaA2LMm5Ow" target="_blank" rel="external">红杏</a></h2>
+<p>专为 学者 、程序员、外贸工作者 打造的上网加速器。我们相信，上网本该如此简单！扯淡了，我相信大家都懂，因为在天朝。不多说，我相信收费的才能得到更好地服务。</p>
+<h2 id="有道智能翻译"><a href="https://chrome.google.com/webstore/detail/%E6%9C%89%E9%81%93%E6%99%BA%E8%83%BD%E7%BF%BB%E8%AF%91/fcihnniakiicgonogcieldhhjbgpnjpj" target="_blank" rel="external">有道智能翻译</a></h2>
+<p>浏览页面时，点击插件栏按钮, 就可以立刻体验有道网页翻译2.0。网页可以分翻译等级，难词用括号在原文中注释，可以全文翻译。某些网站因为安全原因，可能会使用不了，不过绝大部分网站是可以使用的。</p>
+<h2 id="颜文字"><a href="https://chrome.google.com/webstore/detail/%E9%A2%9C%E6%96%87%E5%AD%97/cajbknjkkfkmmcbefnecfmcippoacfao/reviews" target="_blank" rel="external">颜文字</a></h2>
+<p>卖萌专用，非诚勿扰。在任意地方快速输入颜文字!史上收录最多的颜文字！ヾ(；ﾟ(OO)ﾟ)ﾉ･ｪ･^=)( =①ω①=)ヾ（＠＾▽＾＠）ノψ(｀∇´)ψ</p>
+<h2 id="Postman_-_REST_Client"><a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm" target="_blank" rel="external">Postman - REST Client</a></h2>
+<p>Postman是Ajax开发的神器，对于Restful开发方式特别有帮助，可以用来模拟各种请求来测试API的正确性，比如用来模拟Ajax请求。它还支持认证，比如简单的用户名/密码，或者Oauth1.0。安装过后在chrome的app中。</p>
+<h2 id="Web_Developer"><a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm/related" target="_blank" rel="external">Web Developer</a></h2>
+<p>安装Web Developer扩展后，会在浏览器的工具栏中添加一个按钮，点击该按钮，会弹出各种Web开发工具。此扩展工具的作者同时也是非常流行的Firefox扩展Web Developer extension for Firefox的作者。</p>
+<h2 id="ColorZilla"><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp/related" target="_blank" rel="external">ColorZilla</a></h2>
+<p>可以从页面上任何一点获取颜色，维护获取历史等。</p>
+<h2 id="Page_Ruler"><a href="https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn" target="_blank" rel="external">Page Ruler</a></h2>
+<p>给你测量一个网站中的任何元素的尺寸（像素宽度和高度）的工具。</p>
+<h2 id="Axure_RP_Extension_for_Chrome"><a href="https://chrome.google.com/webstore/detail/axure-rp-extension-for-ch/dogkpdfcklifaemcdfbildhcofnopogp" target="_blank" rel="external">Axure RP Extension for Chrome</a></h2>
+<p>Axure RP Pro 是一个产品经理必备的交互原型设计工具，能够高效率制作产品原型，快速绘制线框图、流程图、网站架构图、示意图、HTML 模版等。而这个插件就为了能够使用chrome来查看原型开发的。</p>
+<h2 id="AdBlock"><a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="external">AdBlock</a></h2>
+<p>Adblock Plus 是世界上最流行的浏览器扩展，世界各地有数百万用户在使用它。这是一个社区驱动的开源项目，有数百名志愿者为 Adblock Plus 的成功作出了贡献，以实现所有烦人的广告被自动阻挡。</p>
+<h2 id="HostAdmin"><a href="https://chrome.google.com/webstore/detail/hostadmin/oklkidkfohahankieehkeenbillligdn" target="_blank" rel="external">HostAdmin</a></h2>
+<p>在某些时候切换系统host必不可少，特别是在办公环境下需要来回切换本地、测试、在线等多个host环境，常规手动更改host文件里的文本较为麻烦。而Hostadmin这款浏览器扩展能够很方便的切换自己所配置的几个开发环境，经本人测试使用非常方便，只要轻轻一点则立即生效。</p>
+<h2 id="草料二维码"><a href="https://chrome.google.com/webstore/detail/%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81/moombeodfomdpjnpocobemoiaemednkg" target="_blank" rel="external">草料二维码</a></h2>
+<p>在开发一些移动端网站时，二维码当然是必不可少。</p>
+<h2 id="结语">结语</h2>
+<p>大家有什么好玩的chrome插件也分享分享啊！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这篇博客推荐的都是谷歌chrome浏览器插件，理论上，与之相同内核的浏览器都能使用。由于是谷歌插件，所以在天朝的网络，你懂的！]]>
+    
+    </summary>
+    
+      <category term="插件" scheme="http://myqianlan.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="chrome" scheme="http://myqianlan.com/tags/chrome/"/>
+    
+      <category term="浏览器" scheme="http://myqianlan.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[极其简单的使用基于gulp和sass前端工作流]]></title>
+    <link href="http://myqianlan.com/2014/12/01/a-simple-workflow-with-gulp-and-sass/"/>
+    <id>http://myqianlan.com/2014/12/01/a-simple-workflow-with-gulp-and-sass/</id>
+    <published>2014-12-01T02:23:04.000Z</published>
+    <updated>2014-12-04T00:32:38.000Z</updated>
+    <content type="html"><![CDATA[<p>简单的记录自己如何在实际工作中使用gulp和sass的。我的原则是，小而美！<a id="more"></a></p>
+<h2 id="gulp与sass介绍">gulp与sass介绍</h2>
+<h3 id="gulp">gulp</h3>
+<p>什么是gulp?和Grunt一样，是一种任务管理工具；和Grunt又不一样，gulp是一种基于流的，代码优于配置的新一代构建工具。</p>
+<p>Gulp 和 Grunt 类似，但相比于Grunt的频繁的IO操作，Gulp的流操作，能更快地完成构建。</p>
+<h3 id="sass">sass</h3>
+<p>Sass是”<em>Syntactically Awesome StyleSheets</em>“的简称。如同less,stylus一样，是“CSS预处理器”中的一种，你可以称其是工具或者是语言。在我看来，sass除了不够小而美以外，确实是很强大的。Sass官网上是这么来描述的：</p>
+<blockquote>
+<p>Sass is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly, particularly with the help of the Compass style library.</p>
+</blockquote>
+<h3 id="如何安装gulp与sass">如何安装gulp与sass</h3>
+<p>自己上网谷歌或者百度去！</p>
+<h2 id="gulp任务管理">gulp任务管理</h2>
+<p>通过gulp做了如下任务：</p>
+<ul>
+<li>sass预编译，并且生成sourcemap,方便调试</li>
+<li>autoprefixer后编译,自动添加浏览器前缀</li>
+<li>css、js、图片等文件压缩</li>
+<li>js代码检查</li>
+<li>本地服务器</li>
+<li>自动监听</li>
+</ul>
+<h2 id="如何使用">如何使用</h2>
+<ul>
+<li><p>首先，确保已经安装nodejs（nodejs如何安装？O(∩_∩)O~呵呵）。</p>
+</li>
+<li><p>然后，全局安装gulp</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gulp -g</div></pre></td></tr></table></figure>
+
+<ul>
+<li>clone到本地</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/myqianlan/f2e-workflow.git</div></pre></td></tr></table></figure>
+
+<ul>
+<li>下载依赖</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> f2e-workflow</div><div class="line">npm install</div></pre></td></tr></table></figure>
+
+<ul>
+<li>运行</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gulp <span class="built_in">help</span></div></pre></td></tr></table></figure>
+
+<h2 id="说明">说明</h2>
+<p>我知道这个流程不够强大，但却是最适合我的。期间，我也折腾过各种高大上的流程，但通通都不了了之。所以，大道至简。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>简单的记录自己如何在实际工作中使用gulp和sass的。我的原则是，小而美！]]>
+    
+    </summary>
+    
+      <category term="gulp" scheme="http://myqianlan.com/tags/gulp/"/>
+    
+      <category term="sass" scheme="http://myqianlan.com/tags/sass/"/>
+    
+      <category term="教程" scheme="http://myqianlan.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[如何使用javascript书写递归函数]]></title>
+    <link href="http://myqianlan.com/2014/11/25/write-recursive-function-in-javascript/"/>
+    <id>http://myqianlan.com/2014/11/25/write-recursive-function-in-javascript/</id>
+    <published>2014-11-25T08:57:00.000Z</published>
+    <updated>2014-11-26T07:11:54.000Z</updated>
+    <content type="html"><![CDATA[<p>递归函数大家都应该比较熟吧？那么，如何在javascript中书写一个完美的递归函数呢？且听我娓娓道来。<a id="more"></a></p>
+<h2 id="递归函数">递归函数</h2>
+<p>写的时候，查了一下维基百科对<a href="http://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0" target="_blank" rel="external">递归函数</a>的定义，恕我愚钝，简直太深奥了！所以，我还是简单的说说我对递归函数的理解吧。递归函数，说白了就是在函数内部引用函数自身，最终到给定的递归结束条件时回溯。当然，你也可以不给定结束条件，死了别挂我~(╯﹏╰)~</p>
+<h2 id="使用javascript书写递归函数">使用javascript书写递归函数</h2>
+<p>现在，一步一步，摩擦摩擦，在皎洁的编辑器上，来开始使用javascript写递归函数吧！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * fun(--num); </div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>好了，不错，一个堪称经典的递归求阶乘的函数诞生了。事情肯定不会这么顺利，一定是个圈套。我们来如下调用以下看看会怎么样？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> test = fun;</div><div class="line">fun = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(test(<span class="number">7</span>));</div></pre></td></tr></table></figure>
+
+<p>呵呵，居然报错了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Uncaught <span class="built_in">TypeError</span>: object is not a <span class="function"><span class="keyword">function</span></span></div></pre></td></tr></table></figure>
+
+<p>嗯，报了类型错误。。。</p>
+<p>回过头去看看我们是如何调用的。发现问题了吧！我们把fun赋给了test，然后把fun给回收掉了。为什么会出错呢？因为像function这种赋值其实是引用传递，只是把指向函数的指针（这里说地址也行）赋给test了。但我们把fun赋值为null的时候，函数都已经被回收了，拿什么来执行？知道问题所在了，我决定换种方式来定义：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * <span class="built_in">arguments</span>.callee(--num); </div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>然后测试一下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> test = fun;</div><div class="line">fun = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(test(<span class="number">7</span>));</div></pre></td></tr></table></figure>
+
+<p>OK，测试通过！</p>
+<p>但是在某一天，当我实际码代码的时候，问题又出现了。什么问题呢？我们来看一下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Uncaught <span class="built_in">TypeError</span>: <span class="string">'caller'</span>, <span class="string">'callee'</span>, and <span class="string">'arguments'</span> properties may not be accessed on strict mode functions or the <span class="built_in">arguments</span> objects <span class="keyword">for</span> calls to them</div></pre></td></tr></table></figure>
+
+<p>╮(╯▽╰)╭哎！可怜啊！因为我使用了<strong>“use strict”</strong>！严格模式下是不允许的。。。</p>
+<p>好吧！继续想办法！既然不能使用arguments.callee()，那还是想想其他的方式吧。</p>
+<p>看下面的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fun = (<span class="function"><span class="keyword">function</span> <span class="title">f</span><span class="params">(num)</span></span>{</div><div class="line">    <span class="keyword">if</span>(num &lt;= <span class="number">1</span>){</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    } <span class="keyword">else</span>{</div><div class="line">    <span class="keyword">return</span> num * f(--num); </div><div class="line">    }</div><div class="line">});</div></pre></td></tr></table></figure>
+
+<p>然后我测试了以下，神奇的通过了，暂时没有发现任何问题！</p>
+<p>为什么呢？因为我们使用了“（）”，巧妙地使用命名函数表达式来达到了同样的效果。</p>
+<h2 id="参考资料">参考资料</h2>
+<ol>
+<li><strong>《JavaScript高级程序设计（第三版）》</strong></li>
+<li><strong>《JavaScript启示录》</strong></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>递归函数大家都应该比较熟吧？那么，如何在javascript中书写一个完美的递归函数呢？且听我娓娓道来。]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://myqianlan.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Git基本命令和GitFlow工作流]]></title>
+    <link href="http://myqianlan.com/2014/11/15/git-tips-and-gitflow/"/>
+    <id>http://myqianlan.com/2014/11/15/git-tips-and-gitflow/</id>
+    <published>2014-11-15T06:08:44.000Z</published>
+    <updated>2014-11-17T07:53:07.000Z</updated>
+    <content type="html"><![CDATA[<p>本篇博客讲解了git的一些基本的团队协作命令，和GitFlow工作流指南<a id="more"></a></p>
+<h2 id="git_团队协作的一些命令">git 团队协作的一些命令</h2>
+<ul>
+<li><strong>1.开分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git branch 新分支名</div><div class="line">例如，在master分支下，新开一个开发分支：</div><div class="line">git branch dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>2.切换到新分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkout 分支名</div><div class="line">例如，在master分支下，切换到新开的dev：</div><div class="line">git checkout dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>3.开分支和切换分支合并到一个命令</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkout -b 新分支名</div><div class="line">例如，新开一个开发分支，并立即切换到该分支：</div><div class="line">git checkout -b dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>4.切换回原分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout 原分支名</div><div class="line">例如，切换回master</div><div class="line">git checkout master</div><div class="line">注意：当前分支有修改，还未commit的时候，会切换失败，应当先commit，但可以不用push</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>5.合并分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git merge 需要合并的分支名</div><div class="line">例如，刚刚已经切换回master，现在需要合并dev的内容：</div><div class="line">git merge dev</div><div class="line">建议在GitLab(或者其他git系统)上面创建merge request的形式来进行分支的合并和代码审核。</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>6.查看本地分支列表</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch <span class="operator">-a</span></div><div class="line">前面带remotes/origin 的，是远程分支</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>7.查看远程分支列表</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -r</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>8.向远程提交本地新开的分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push origin 新分支名</div><div class="line">例如，刚刚在master下新开的dev分支：</div><div class="line">git push origin dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>9.删除远程分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git push origin :远程分支名</div><div class="line">例如，删除刚刚提交到远程的dev分支：</div><div class="line">git push origin :dev</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>10.删除本地分支</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git branch 分支名称 <span class="operator">-d</span></div><div class="line">例如，在master分支下，删除新开的dev分支：</div><div class="line">git branch dev <span class="operator">-d</span></div><div class="line">注意：如果dev的更改，push到远程，在GitLab(或者其他git系统)上面进行了merge操作，但是本地master没有pull最新的代码，会删除不成功，可以先git pull origin master，或者强制删除</div><div class="line">git branch dev -D</div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>11.更新分支列表信息</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch -p</div></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>12.TortoiseGit(乌龟git)</strong></p>
+<pre><code>  不可否认，在windows下，这个是个不错的工具。不管你是命令行新手还是重度使用者，我觉得都可以尝试一下。
+</code></pre></li>
+</ul>
+<h2 id="Git工作流指南：Gitflow工作流">Git工作流指南：Gitflow工作流</h2>
+<p>在你开始阅读之前，请记住：流程应被视作为指导方针，而非“铁律”。我们只是想告诉你可能的做法。因此，如果有必要的话，你可以组合使用不同的流程</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflows-gitflow.png" alt="图一"></p>
+<p>Gitflow工作流定义了一个围绕项目发布的严格分支模型。虽然比功能分支工作流复杂几分，但提供了用于一个健壮的用于管理大型项目的框架。</p>
+<p>Gitflow工作流没有用超出功能分支工作流的概念和命令，而是为不同的分支分配一个很明确的角色，并定义分支之间如何和什么时候进行交互。除了使用功能分支，在做准备、维护和记录发布也使用各自的分支。当然你可以用上功能分支工作流所有的好处：Pull Requests、隔离实验性开发和更高效的协作。</p>
+<h3 id="工作方式">工作方式</h3>
+<p>Gitflow工作流仍然用中央仓库作为所有开发者的交互中心。和其它的工作流一样，开发者在本地工作并push分支到要中央仓库中。</p>
+<h3 id="历史分支">历史分支</h3>
+<p>相对使用仅有的一个master分支，Gitflow工作流使用2个分支来记录项目的历史。master分支存储了正式发布的历史，而develop分支作为功能的集成分支。这样也方便master分支上的所有提交分配一个版本号。</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-1historical.png" alt="图二"></p>
+<p>剩下要说明的问题围绕着这2个分支的区别展开。</p>
+<h3 id="功能分支">功能分支</h3>
+<p>每个新功能位于一个自己的分支，这样可以push到中央仓库以备份和协作。但功能分支不是从master分支上拉出新分支，而是使用develop分支作为父分支。当新功能完成时，合并回develop分支。新功能提交应该从不直接与master分支交互。</p>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-2feature.png" alt="图三"></p>
+<blockquote>
+<p>注意，从各种含义和目的上来看，功能分支加上develop分支就是功能分支工作流的用法。但Gitflow工作流没有在这里止步。</p>
+</blockquote>
+<h3 id="发布分支">发布分支</h3>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-3release.png" alt="图四"></p>
+<p>一旦develop分支上有了做一次发布（或者说快到了既定的发布日）的足够功能，就从develop分支上fork一个发布分支。新建的分支用于开始发布循环，所以从这个时间点开始之后新的功能不能再加到这个分支上 —— 这个分支只应该做Bug修复、文档生成和其它面向发布任务。一旦对外发布的工作都完成了，发布分支合并到master分支并分配一个版本号打好Tag。另外，这些从新建发布分支以来的做的修改要合并回develop分支。</p>
+<p>使用一个用于发布准备的专门分支，使得一个团队可以在完善当前的发布版本的同时，另一个团队可以继续开发下个版本的功能。<br>这也打造定义良好的开发阶段（比如，可以很轻松地说，『这周我们要做准备发布版本4.0』，并且在仓库的目录结构中可以实际看到）。</p>
+<h3 id="常用的分支约定：">常用的分支约定：</h3>
+<blockquote>
+<p>用于新建发布分支的分支: develop</p>
+<p>用于合并的分支: master</p>
+<p>分支命名: release-<em> 或 release/</em></p>
+</blockquote>
+<h3 id="维护分支">维护分支</h3>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-4maintenance.png" alt="图五"></p>
+<p>维护分支或说是热修复（hotfix）分支用于生成快速给产品发布版本（production releases）打补丁，这是唯一可以直接从master分支fork出来的分支。修复完成，修改应该马上合并回master分支和develop分支（当前的发布分支），master分支应该用新的版本号打好Tag。</p>
+<p>为Bug修复使用专门分支，让团队可以处理掉问题而不用打断其它工作或是等待下一个发布循环。你可以把维护分支想成是一个直接在master分支上处理的临时发布。</p>
+<h3 id="示例">示例</h3>
+<p>下面的示例演示本工作流如何用于管理单个发布循环。假设你已经创建了一个中央仓库。</p>
+<h4 id="创建开发分支"><em>创建开发分支</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-5createdev.png" alt="图六"></p>
+<p>第一步为master分支配套一个develop分支。简单来做可以本地创建一个空的develop分支，push到服务器上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch develop</div><div class="line">git push -u origin develop</div></pre></td></tr></table></figure>
+
+<p>以后这个分支将会包含了项目的全部历史，而master分支将只包含了部分历史。其它开发者这时应该克隆中央仓库，建好develop分支的跟踪分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git clone ssh://user@host/path/to/repo.git</div><div class="line">git checkout -b develop origin/develop</div></pre></td></tr></table></figure>
+
+<p>现在每个开发都有了这些历史分支的本地拷贝。</p>
+<h4 id="工程师A和工程师B开始开发新功能"><em>工程师A和工程师B开始开发新功能</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-6maryjohnbeginnew.png" alt="图七"></p>
+<p>这个示例中，工程师A和工程师B开始各自的功能开发。他们需要为各自的功能创建相应的分支。新分支不是基于master分支，而是应该基于develop分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b some-feature develop</div></pre></td></tr></table></figure>
+
+<p>他们用老套路添加提交到各自功能分支上：编辑、暂存、提交：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git status</div><div class="line">git add</div><div class="line">git commit</div></pre></td></tr></table></figure>
+
+<h4 id="工程师A完成功能开发"><em>工程师A完成功能开发</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-7maryfinishes.png" alt="图八"></p>
+<p>添加了提交后，工程师A觉得她的功能OK了。如果团队使用Pull Requests，这时候可以发起一个用于合并到develop分支。否则她可以直接合并到她本地的develop分支后push到中央仓库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git pull origin develop</div><div class="line">git checkout develop</div><div class="line">git merge some-feature</div><div class="line">git push</div><div class="line">git branch <span class="operator">-d</span> some-feature</div></pre></td></tr></table></figure>
+
+<p>第一条命令在合并功能前确保develop分支是最新的。注意，功能决不应该直接合并到master分支。冲突解决方法和集中式工作流一样。</p>
+<h4 id="工程师A开始准备发布"><em>工程师A开始准备发布</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-8maryprepsrelease.png" alt="图九"></p>
+<p>这个时候工程师B正在实现他的功能，工程师A开始准备她的第一个项目正式发布。像功能开发一样，她用一个新的分支来做发布准备。这一步也确定了发布的版本号：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b release-<span class="number">0.1</span> develop</div></pre></td></tr></table></figure>
+
+<p>这个分支是清理发布、执行所有测试、更新文档和其它为下个发布做准备操作的地方，像是一个专门用于改善发布的功能分支。</p>
+<p>只要工程师A创建这个分支并push到中央仓库，这个发布就是功能冻结的。任何不在develop分支中的新功能都推到下个发布循环中。</p>
+<h4 id="工程师A完成发布"><em>工程师A完成发布</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-release-cycle-9maryfinishes.png" alt="图十"></p>
+<p>一旦准备好了对外发布，工程师A合并修改到master分支和develop分支上，删除发布分支。合并回develop分支很重要，因为在发布分支中已经提交的更新需要在后面的新功能中也要是可用的。另外，如果工程师A的团队要求Code Review，这是一个发起Pull Request的理想时机。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git checkout master</div><div class="line">git merge release-<span class="number">0.1</span></div><div class="line">git push</div><div class="line">git checkout develop</div><div class="line">git merge release-<span class="number">0.1</span></div><div class="line">git push</div><div class="line">git branch <span class="operator">-d</span> release-<span class="number">0.1</span></div></pre></td></tr></table></figure>
+
+<p>发布分支是作为功能开发（develop分支）和对外发布（master分支）间的缓冲。只要有合并到master分支，就应该打好Tag以方便跟踪。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag <span class="operator">-a</span> <span class="number">0.1</span> -m <span class="string">"Initial public release"</span> master</div><div class="line">git push --tags</div></pre></td></tr></table></figure>
+
+<p>Git有提供各种勾子（hook），即仓库有事件发生时触发执行的脚本。可以配置一个勾子，在你push中央仓库的master分支时，自动构建好对外发布。</p>
+<h4 id="最终用户发现Bug"><em>最终用户发现Bug</em></h4>
+<p><img src="http://myqianlan.qiniudn.com/blog/2014/11/15/git-workflow-gitflow-enduserbug.png" alt="图十一"></p>
+<p>对外发布后，工程师A回去和工程师B一起做下个发布的新功能开发，直到有最终用户开了一个Ticket抱怨当前版本的一个Bug。为了处理Bug，工程师A（或工程师B）从master分支上拉出了一个维护分支，提交修改以解决问题，然后直接合并回master分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b issue-<span class="comment">#001 master</span></div></pre></td></tr></table></figure>
+
+<p>Fix the bug</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkout master</div><div class="line">git merge issue-<span class="comment">#001</span></div><div class="line">git push</div></pre></td></tr></table></figure>
+
+<p>就像发布分支，维护分支中新加这些重要修改需要包含到develop分支中，所以工程师A要执行一个合并操作。然后就可以安全地删除这个分支了：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git checkout develop</div><div class="line">git merge issue-<span class="comment">#001</span></div><div class="line">git push</div><div class="line">git branch <span class="operator">-d</span> issue-<span class="comment">#001</span></div></pre></td></tr></table></figure>
+
+<h2 id="最后">最后</h2>
+<p>Git是一个不错的版本管理工具，但也仅仅是工具。记住，这里演示的工作流只是可能用法的例子，而不是在实际工作中使用Git不可违逆的条例。所以不要畏惧按自己需要对工作流的用法做取舍。不变的目标就是让Git为你所用。</p>
+<h2 id="参考资料">参考资料</h2>
+<ol>
+<li><strong>Comparing Workflows</strong> <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/" target="_blank" rel="external">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/</a></li>
+<li><strong>Git 版本控制系統</strong> <a href="http://ihower.tw/git/index.html" target="_blank" rel="external">http://ihower.tw/git/index.html</a></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本篇博客讲解了git的一些基本的团队协作命令，和GitFlow工作流指南]]>
+    
+    </summary>
+    
+      <category term="git" scheme="http://myqianlan.com/tags/git/"/>
+    
+      <category term="教程" scheme="http://myqianlan.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[常用终端命令]]></title>
+    <link href="http://myqianlan.com/2014/11/14/terminal-common-used-commands/"/>
+    <id>http://myqianlan.com/2014/11/14/terminal-common-used-commands/</id>
+    <published>2014-11-14T13:57:08.000Z</published>
+    <updated>2014-11-14T14:47:18.000Z</updated>
+    <content type="html"><![CDATA[<p>一些自己收集的终端常用命令<a id="more"></a></p>
+<h2 id="关于Linux文件和目录的命令">关于Linux文件和目录的命令</h2>
+<ul>
+<li>ls 列出当前目录文件（不包括隐含文件）</li>
+<li>ls -a 列出当前目录文件（包括隐含文件）</li>
+<li>ls -l 列出当前目录下文件的详细信息</li>
+<li>cd .. 回当前目录的上一级目录</li>
+<li>cd – 回上一次所在的目录</li>
+<li>cd ~ 或 cd 回当前用户的宿主目录</li>
+<li>mkdir 目录名 创建一个目录</li>
+<li>rmdir 空目录名 删除一个空目录</li>
+<li>rm 文件名 文件名 删除一个文件或多个文件</li>
+<li>rm -rf 非空目录名 删除一个非空目录下的一切</li>
+<li>mv 路经/文件 /经/文件移动相对路经下的文件到绝对路经下</li>
+<li>mv 文件名 新名称 在当前目录下改名</li>
+</ul>
+<h2 id="DOS_常用命令">DOS 常用命令</h2>
+<ul>
+<li><p>dir 列文件名</p>
+<pre><code>  显示目录文件和子目录列表，呵呵，这个当然是人人要知道的。 
+  可以使用通配符（? 和 <span class="keyword">*</span>），？表通配一个字符，<span class="keyword">*</span>表通配任意字符 
+  <span class="keyword">*</span>.后缀 
+  指定要查看后缀的文件。 上面其实也可以为“ . 后缀”,例如dir <span class="keyword">*</span>.exe 等于dir .exe 
+  /p 
+  每次显示一个列表屏幕。要查看下一屏，请按键盘上的任意键。 
+  /w 
+  以宽格式显示列表，在每一行上最多显示 5 个文件名或目录名。 
+  /s 
+  列出指定目录及所有子目录中出现的每个指定的文件名。比win环境下的查找快多了 
+  dir <span class="keyword">*</span>.<span class="keyword">*</span> -&gt; a.txt 把当前目录文件列表写入a.txt 
+  dir <span class="keyword">*</span>.<span class="keyword">*</span> /s -&gt; a.txt 把当前目录文件列表写入a.txt，包括子目录下文件。
+</code></pre></li>
+<li>deltree 删除目录树 </li>
+<li>cls 清屏 </li>
+<li>cd 改变当前目录  </li>
+<li>copy 拷贝文件  </li>
+<li>del 删除文件   </li>
+<li>move 移动文件、改目录名 </li>
+<li>more 分屏显示 </li>
+<li>type 显示文件内容 </li>
+<li>time 显示及修改时间  </li>
+<li><p>tree 列目录树 </p>
+<pre><code>  tree    表示路径扫描只显示路径，不显示路径下的文件名及扩展名
+  tree /f 表示全路径扫描结果中包含文件名及扩展名
+  tree /f D:\ &gt;<span class="keyword">LIST</span>.txt  批处理，对D盘进行全路径扫描，并将结果保存到<span class="keyword">LIST</span>.TXT中，<span class="keyword">LIST</span>所在路径与批处理文件同路径下.
+</code></pre></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一些自己收集的终端常用命令]]>
+    
+    </summary>
+    
+      <category term="终端" scheme="http://myqianlan.com/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+      <category term="命令" scheme="http://myqianlan.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[是时候全面使用html5标签了]]></title>
+    <link href="http://myqianlan.com/2014/11/11/right-time-to-use-html5-tags/"/>
+    <id>http://myqianlan.com/2014/11/11/right-time-to-use-html5-tags/</id>
+    <published>2014-11-11T06:49:08.000Z</published>
+    <updated>2014-11-14T05:04:32.000Z</updated>
+    <content type="html"><![CDATA[<p>html5，这个词语，不管是业内还是业外，都已经耳熟能详了。因为已经火了这么长的的时间了。但是，真正开始使用的又有多少人呢？只能用呵呵来形容了！<a id="more"></a></p>
+<h2 id="html5真的来了">html5真的来了</h2>
+<p>2014年10月28日，历经八年，W3C（万维网联盟）终于完成了HTML5标准的制定工作，html5的规范状态终于变成了RECOMMENDATION。<a href="http://www.w3.org/blog/news/archives/4167" target="_blank" rel="external">HTML5 IS A W3C RECOMMENDATION英文原文</a>。</p>
+<h2 id="接下来做什么">接下来做什么</h2>
+<p>作为一个web开发者，特别是前端开发从业者，需要真正从自身开始，逐渐习惯使用html5标签了。</p>
+<h2 id="html5布局基本demo">html5布局基本demo</h2>
+<p>这里给出一个html5布局的基本demo，欢迎拍砖！<br>同样，你也可以在这里直接查看源码，不过repo里面包含一些基于gulp的工作流。<a href="https://github.com/myqianlan/f2e-workflow" target="_blank" rel="external">点击查看仓库</a></p>
+<p>首先，给出图示“<br><img src="http://myqianlan.qiniudn.com/blog/2014/11/11/html5基本布局.png" alt="html5基本布局"></p>
+<p>然后，给出相应的html代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"zh-CN"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>网站标题，控制在25个字、50个字节以内<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"keywords"</span> <span class="attribute">content</span>=<span class="value">"关键词,5个左右,单个8汉字以内"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"description"</span> <span class="attribute">content</span>=<span class="value">"网站描述，字数尽量空制在80个汉字，160个字符以内！"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=edge"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"viewport"</span> <span class="attribute">content</span>=<span class="value">"width=device-width, initial-scale=1"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"http://cdn.bootcss.com/normalize/3.0.1/normalize.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></div><div class="line">    	<span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    	<span class="tag">body</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#f5f5f5</span></span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">header</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#006dcc</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">35px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">nav</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>; <span class="rule">}</span></div><div class="line">  <span class="tag">nav</span> <span class="tag">li</span> <span class="rules">{</span></div><div class="line">    <span class="rule"><span class="attribute">list-style</span>:<span class="value"> none</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">background-color</span>:<span class="value"> forestgreen</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;</div><div class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">36px</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">36px</span></span></span>;</div><div class="line">    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">20%</span></span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">section</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">300px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#006dcc</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">margin-right</span>:<span class="value"> <span class="number">100px</span></span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">aside</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;</div><div class="line">  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">226px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">300px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> forestgreen</span></span>; <span class="rule">}</span></div><div class="line"></div><div class="line"><span class="tag">footer</span> <span class="rules">{</span></div><div class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">80px</span></span></span>;</div><div class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> gray</span></span>; <span class="rule">}</span></div><div class="line">    <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!--[if lt IE 9]&gt;</span></div><div class="line">    &lt;style&gt;.browsehappy {margin: .2em;background: #ccc;color: #000;padding: .5em;}&lt;/style&gt;</div><div class="line">    &lt;p class="browsehappy"&gt;</div><div class="line">        您使用的浏览器 &lt;strong&gt;版本过低&lt;/strong&gt;</div><div class="line">        ，请</div><div class="line">        &lt;a href="http://browsehappy.com/"&gt;升级您的浏览器&lt;/a&gt;</div><div class="line">        以获得更好的体验。</div><div class="line">    &lt;/p&gt;</div><div class="line">    &lt;script src="http://cdn.bootcss.com/html5shiv/r29/html5.js"&gt;&lt;/script&gt;</div><div class="line">    &lt;![endif]--&gt;</div><div class="line">    <span class="comment">&lt;!-- CONTENT --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">header</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>hello world<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">header</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="title">nav</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>home<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>contact<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>about<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">section</span>&gt;</span>section</div><div class="line">    <span class="tag">&lt;<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">article</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">article</span>&gt;</span><span class="tag">&lt;/<span class="title">article</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">section</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">aside</span>&gt;</span>aside<span class="tag">&lt;/<span class="title">aside</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">footer</span>&gt;</span>footer<span class="tag">&lt;/<span class="title">footer</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<h2 id="迎接新时代">迎接新时代</h2>
+<p>少年，尽情的迎接这个最坏的年代，这个最好的年代！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>html5，这个词语，不管是业内还是业外，都已经耳熟能详了。因为已经火了这么长的的时间了。但是，真正开始使用的又有多少人呢？只能用呵呵来形容了！]]>
+    
+    </summary>
+    
+      <category term="html5" scheme="http://myqianlan.com/tags/html5/"/>
+    
+      <category term="教程" scheme="http://myqianlan.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[偶感]]></title>
+    <link href="http://myqianlan.com/2014/11/11/sometimes-i-thinks/"/>
+    <id>http://myqianlan.com/2014/11/11/sometimes-i-thinks/</id>
+    <published>2014-11-11T05:50:17.000Z</published>
+    <updated>2014-11-16T11:25:19.000Z</updated>
+    <content type="html"><![CDATA[<p>独自漫步于江南</p>
+<p>曾只为拾起</p>
+<p>前世的记忆与企盼<br><a id="more"></a></p>
+<p>小桥流水</p>
+<p>青瓦白墙</p>
+<p>沿岸的足迹</p>
+<p>却不曾</p>
+<p>淡了，碎了</p>
+<p>而故乡的一切</p>
+<p>已化作了奢侈的回忆</p>
+<p>从来不敢轻意翻起</p>
+<p>碎裂的心</p>
+<p>再也经不起</p>
+<p>再也经不起</p>
+<p>多少折腾</p>
+<p>唯执笔的手，依旧</p>
+<p>散落着</p>
+<p>文字一地</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>独自漫步于江南</p>
+<p>曾只为拾起</p>
+<p>前世的记忆与企盼<br>]]>
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://myqianlan.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
