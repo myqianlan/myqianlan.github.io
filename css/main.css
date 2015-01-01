@@ -133,15 +133,15 @@ h1 {
 }
 
 .icon-github:before {
-    content: '\e802';
+    content: '\e800';
 }
 
 .icon-weibo:before {
-    content: '\e801';
+    content: '\e802';
 }
 
 .icon-email:before {
-    content: '\e800';
+    content: '\e801';
 }
 
 .icon-blog:before {
