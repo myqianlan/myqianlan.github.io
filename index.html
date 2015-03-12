@@ -8,11 +8,7 @@
     <meta name="keywords" content="浅蓝,myqianlan,个人主页,应届生求职，WEB前端，网站前端，前端开发">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
-    <script>
-        if (navigator.userAgent.indexOf("AppleWebKit")<0) {
-            window.location.href = "./index-base.html";
-        };
-    </script></head>
+</head>
 <body>
     <!--[if lt IE 9]>
     <p class="browsehappy" style="background: #ccc;color: #000;padding: 12px 36px;">
@@ -22,21 +18,32 @@
         <a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>
         以获得更好的体验。
     </p>
+	<script>
+		window.onload = function(){
+		document.getElementsByTagName("h1")[0].innerText = "很遗憾的告诉你不支持这么二逼的浏览器";
+		document.getElementById("contact").innerText = "你还是换个高级点儿的浏览器吧"
+		};      
+    </script>
     <![endif]-->
     <div class="wrap">
         <h1 class="masked">Welcome to MyQianLan</h1>
-        <div class="contact-wrap">
+        <div class="contact-wrap" id="contact">
             <a href="mailto:linquantan@gmail.com">
-                <span class="icon icon-email"></span>
+                <i class="icon icon-email"></i>
+                <span>Email</span>
+
             </a>
             <a href="http://weibo.com/u/2952588044" target="_black">
-                <span class="icon icon-weibo"></span>
+                <i class="icon icon-weibo"></i>
+                <span>Weibo</span>
             </a>
             <a href="https://github.com/myqianlan" target="_black">
-                <span class="icon icon-github"></span>
+                <i class="icon icon-github"></i>
+                <span>GitHub</span>
             </a>
             <a href="http://www.cnblogs.com/myqianlan" target="_black">
-                <span class="icon icon-blog"></span>
+                <i class="icon icon-blog"></i>
+                <span>Blog</span>
             </a>
         </div>
     </div>
