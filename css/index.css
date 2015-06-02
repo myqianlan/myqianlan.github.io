@@ -94,3 +94,18 @@ body {
 
 .icon-blog:before {
   content: '\e803'; }
+/* --------------------------------------------------------------------------
+   resume
+   -------------------------------------------------------------------------- */
+#resume{
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+#resume a{
+  color: orangered;
+  text-decoration: none;
+}
+#resume a:hover{
+  text-decoration: underline;
+}
