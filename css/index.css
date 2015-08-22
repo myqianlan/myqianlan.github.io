@@ -98,6 +98,7 @@ body {
    resume
    -------------------------------------------------------------------------- */
 #resume{
+  display: none;
   position: absolute;
   top: 10px;
   left: 6px;
