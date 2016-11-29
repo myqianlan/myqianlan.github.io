@@ -32,12 +32,7 @@ body {
 .wrap a{
   display: inline-block;
   padding: 20px;
-}
-.wrap a:hover{
-  transform: scale(-1) rotate(180deg);
-      transition: all .7s ease-in-out .1s;
-  -moz-transition: all .7s ease-in-out .1s;
-  -webkit-transition: all .7s ease-in-out .1s;
+  cursor: pointer;
 }
 
 .wrap p{
