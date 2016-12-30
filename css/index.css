@@ -37,8 +37,7 @@ body {
 
 .wrap p{
   position: absolute;
-  left: 50%;
-  margin-left: -88px;
+  width: 100%;
   text-align: center;
   font-size: 0;
 }
@@ -95,19 +94,3 @@ body {
 
 .icon-blog:before {
   content: '\e803'; }
-/* --------------------------------------------------------------------------
-   resume
-   -------------------------------------------------------------------------- */
-#resume{
-  display: none;
-  position: absolute;
-  top: 10px;
-  left: 6px;
-}
-#resume a{
-  color: orangered;
-  text-decoration: none;
-}
-#resume a:hover{
-  text-decoration: underline;
-}
