@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,70 @@
     <meta name="description" content="浅蓝（myqianlan）的GitHub个人主页">
     <meta name="keywords" content="浅蓝,myqianlan,个人主页,WEB前端,网站前端,前端开发">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index.css"></head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* ==========================================================================
+        Browse Happy prompt
+        ========================================================================== */
+
+        .browsehappy {
+            margin: 0.2em 0;
+            background: red;
+            color: #000;
+            padding: 0.2em 0;
+        }
+        /* ==========================================================================
+        index
+        ========================================================================== */
+
+        html,
+        body {
+            height: 100%;
+            text-rendering: optimizelegibility;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+
+        #starnight {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        .btn-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn-wrap a {
+            padding: 20px 50px;
+            border: 2px solid #4356ba;
+            margin: 0 50px;
+            color: #4356ba;
+            text-decoration: none;
+            transition: all .3s;
+        }
+
+        .btn-wrap a:hover {
+            border-color: #fff;
+            color: #fff;
+            transition: all .3s;
+        }
+    </style>
+</head>
+
 <body>
     <!--[if lt IE 9]>
     <p class="browsehappy" style="background: #ccc;color: #000;padding: 12px 36px;">
@@ -29,27 +93,138 @@
         }
     </style>
     <![endif]-->
-<div class="wrap up" id="up">
-    <p>
+    <div class="btn-wrap">
         <a href="mailto:linquantan@gmail.com">
-           email
+           Email
         </a>
-    </p>
-</div>
-<div class="wrap down" id="down">
-    <p>
         <a href="https://github.com/myqianlan" target="_blank">
-            github
+            GitHub
         </a>
-    </p>
-</div>
-<div style="position:absolute;right:5px;bottom:0;">
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253578845'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1253578845%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-</div>
-<script>
-    console.log("\n走走停停，不忘初心；\n念念不忘，必有回响。\n这是我，\n这是一个前端，\n这是浅蓝。\n");
-    console.log("\n与我联系: %c linquantan@gmail.com","color:red");
-</script>
+
+    </div>
+    <canvas id="starnight"></canvas>
+    <div style="position:absolute;right:5px;bottom:0;">
+        <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1253578845'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1253578845%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    </div>
+
+    <script>
+        //canvas的id名，星星颜色(hsla的hue色调)，星星数量，星星半径比，星星移动范围(值越大范围越小)，星星移动速度(值越大速度越慢),星星拖尾效果(0~1值越小拖尾越明显)  
+        function starNight(id, starscolor, starsamount, starsradius, movrange, speed, trailing) {
+            //宇宙特效  
+            "use strict";
+            var canvas = document.getElementById(id),
+                ctx = canvas.getContext('2d'),
+                w = canvas.width,
+                h = canvas.height,
+
+                hue = starscolor,//230  
+                stars = [],
+                count = 0,
+                maxStars = starsamount;//星星数量  
+
+            var canvas2 = document.createElement('canvas'),
+                ctx2 = canvas2.getContext('2d');
+            canvas2.width = 100;
+            canvas2.height = 100;
+            var half = canvas2.width / 2,
+                gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
+            gradient2.addColorStop(0.025, '#CCC');
+            gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+            gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+            gradient2.addColorStop(1, 'transparent');
+
+            ctx2.fillStyle = gradient2;
+            ctx2.beginPath();
+            ctx2.arc(half, half, half, 0, Math.PI * 2);
+            ctx2.fill();
+
+            // End cache  
+
+            function random(min, max) {
+                if (arguments.length < 2) {
+                    max = min;
+                    min = 0;
+                }
+
+                if (min > max) {
+                    var hold = max;
+                    max = min;
+                    min = hold;
+                }
+
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            function maxOrbit(x, y) {
+                var max = Math.max(x, y),
+                    diameter = Math.round(Math.sqrt(max * max + max * max));
+                return diameter / movrange;
+                //星星移动范围，值越大范围越小，  
+            }
+
+            var Star = function () {
+
+                this.orbitRadius = random(maxOrbit(w, h));
+                this.radius = random(starsradius, this.orbitRadius) / 8;
+                //星星半径大小  
+                this.orbitX = w / 2;
+                this.orbitY = h / 2;
+
+                this.timePassed = random(0, maxStars);
+                this.speed = random(this.orbitRadius) / speed;
+                //星星移动速度  
+                this.alpha = random(2, 10) / 10;
+
+                count++;
+                stars[count] = this;
+            }
+
+            Star.prototype.draw = function () {
+                var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
+                    y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
+                    twinkle = random(10);
+
+                if (twinkle === 1 && this.alpha > 0) {
+                    this.alpha -= 0.05;
+                } else if (twinkle === 2 && this.alpha < 1) {
+                    this.alpha += 0.05;
+                }
+
+                ctx.globalAlpha = this.alpha;
+
+                ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+                this.timePassed += this.speed;
+            }
+
+            for (var i = 0; i < maxStars; i++) {
+                new Star();
+            }
+
+            function animation() {
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.globalAlpha = trailing; //尾巴  
+                ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 2)';
+                ctx.fillRect(0, 0, w, h)
+
+                ctx.globalCompositeOperation = 'lighter';
+                for (var i = 1, l = stars.length; i < l; i++) {
+                    stars[i].draw();
+                };
+
+                window.requestAnimationFrame(animation);
+            }
+
+            animation();
+        }
+        starNight("starnight", 230, 1000, 60, 1, 50000, 0.6);
+    </script>
+    <script>
+        console.log("\n走走停停，不忘初心；\n念念不忘，必有回响。\n这是我，\n这是一个前端，\n这是浅蓝，\n这是Moyi。\n");
+        console.log("\n与我联系: %c linquantan@gmail.com", "color:red");
+    </script>
 
 </body>
+
 </html>
